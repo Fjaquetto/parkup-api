@@ -15,29 +15,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{CDADA980-B72A-4E18-931B-387654472A96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkUp.Services.Api", "ParkUp.Services.Api\ParkUp.Services.Api.csproj", "{9D5D36C4-8654-4C1F-8725-AC19257BB72E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkUp.Services.Api", "ParkUp.Services.Api\ParkUp.Services.Api.csproj", "{9D5D36C4-8654-4C1F-8725-AC19257BB72E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkUp.Application", "ParkUp.Application\ParkUp.Application.csproj", "{47CB2D37-D318-4CB4-9B56-451B0789F260}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkUp.Application", "ParkUp.Application\ParkUp.Application.csproj", "{47CB2D37-D318-4CB4-9B56-451B0789F260}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkUp.Domain", "ParkUp.Domain\ParkUp.Domain.csproj", "{30805341-C308-4DAD-800F-4A24D707B4A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkUp.Domain", "ParkUp.Domain\ParkUp.Domain.csproj", "{30805341-C308-4DAD-800F-4A24D707B4A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkUp.Domain.Core", "ParkUp.Domain.Core\ParkUp.Domain.Core.csproj", "{363551DC-39E6-4B53-B7D5-3A95F199E617}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkUp.Domain.Core", "ParkUp.Domain.Core\ParkUp.Domain.Core.csproj", "{363551DC-39E6-4B53-B7D5-3A95F199E617}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{F213FF1A-F6CE-421F-A92E-698B3AF7140F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{579796FC-9614-4D25-80F3-D7354C154547}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkUp.Infra.Data", "ParkUp.Infra.Data\ParkUp.Infra.Data.csproj", "{0552164A-C001-486C-98E6-3D393BD72521}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkUp.Infra.Data", "ParkUp.Infra.Data\ParkUp.Infra.Data.csproj", "{0552164A-C001-486C-98E6-3D393BD72521}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkUp.CC.Identity", "ParkUp.CC.Identity\ParkUp.CC.Identity.csproj", "{4D4306BC-7093-4B80-9C46-85F0D5D293C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkUp.CC.Identity", "ParkUp.CC.Identity\ParkUp.CC.Identity.csproj", "{4D4306BC-7093-4B80-9C46-85F0D5D293C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkUp.CC.IoC", "ParkUp.CC.IoC\ParkUp.CC.IoC.csproj", "{85CF88F4-48BD-43A6-9455-8AB2BD87C4E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkUp.CC.IoC", "ParkUp.CC.IoC\ParkUp.CC.IoC.csproj", "{85CF88F4-48BD-43A6-9455-8AB2BD87C4E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkUp.Tests", "ParkUp.Tests\ParkUp.Tests.csproj", "{20827034-9FFD-4D05-B08B-A8CF2B7FFFBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkUp.Tests", "ParkUp.Tests\ParkUp.Tests.csproj", "{20827034-9FFD-4D05-B08B-A8CF2B7FFFBC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.3 - Integration", "4.3 - Integration", "{E8BA360B-C550-4068-A762-C8D31B90DA69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkUp.Infra.Integration", "ParkUp.Infra.Integration\ParkUp.Infra.Integration.csproj", "{EC8D384D-2179-42BD-94B0-683B45CE0801}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkUp.Infra.Integration", "ParkUp.Infra.Integration\ParkUp.Infra.Integration.csproj", "{EC8D384D-2179-42BD-94B0-683B45CE0801}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

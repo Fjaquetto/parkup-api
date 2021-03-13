@@ -42,7 +42,7 @@ namespace ParkUp.Services.Api
             services.AddSwaggerSetup();
 
             // .NET Native DI Abstraction
-            services.AddDependencyInjectionSetup();
+            services.AddDependencyInjectionSetup(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +51,7 @@ namespace ParkUp.Services.Api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwaggerSetup();
             }
 
             app.UseHttpsRedirection();

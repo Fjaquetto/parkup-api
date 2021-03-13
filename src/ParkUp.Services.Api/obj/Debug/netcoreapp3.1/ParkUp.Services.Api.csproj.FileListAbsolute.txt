@@ -89,6 +89,7 @@ D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Pa
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\ParkUp.Services.Api.runtimeconfig.dev.json
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\ParkUp.Services.Api.dll
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\ParkUp.Services.Api.pdb
+D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Dapper.dll
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Humanizer.dll
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
@@ -121,7 +122,11 @@ D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Mi
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
@@ -154,6 +159,9 @@ D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Pa
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\obj\Debug\netcoreapp3.1\ParkUp.Services.Api.csprojAssemblyReference.cache
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\obj\Debug\netcoreapp3.1\ParkUp.Services.Api.AssemblyInfoInputs.cache
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\obj\Debug\netcoreapp3.1\ParkUp.Services.Api.AssemblyInfo.cs
+D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\obj\Debug\netcoreapp3.1\ParkUp.Services.Api.csproj.CoreCompileInputs.cache
+D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\obj\Debug\netcoreapp3.1\ParkUp.Services.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\obj\Debug\netcoreapp3.1\ParkUp.Services.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\obj\Debug\netcoreapp3.1\ParkUp.Services.Api.RazorTargetAssemblyInfo.cache
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\obj\Debug\netcoreapp3.1\ParkUp.Services.Api.csproj.CopyComplete
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\obj\Debug\netcoreapp3.1\staticwebassets\ParkUp.Services.Api.StaticWebAssets.Manifest.cache
@@ -161,10 +169,3 @@ D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\obj\Debug\netcoreapp3.1\st
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\obj\Debug\netcoreapp3.1\ParkUp.Services.Api.dll
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\obj\Debug\netcoreapp3.1\ParkUp.Services.Api.pdb
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\obj\Debug\netcoreapp3.1\ParkUp.Services.Api.genruntimeconfig.cache
-D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
-D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
-D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\obj\Debug\netcoreapp3.1\ParkUp.Services.Api.csproj.CoreCompileInputs.cache
-D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\obj\Debug\netcoreapp3.1\ParkUp.Services.Api.MvcApplicationPartsAssemblyInfo.cs
-D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Services.Api\obj\Debug\netcoreapp3.1\ParkUp.Services.Api.MvcApplicationPartsAssemblyInfo.cache
