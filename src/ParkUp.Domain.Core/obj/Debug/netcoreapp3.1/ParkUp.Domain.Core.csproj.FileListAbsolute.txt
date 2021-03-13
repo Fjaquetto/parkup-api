@@ -1,0 +1,8 @@
+D:\Projetos\ParkUp\src\ParkUp.Domain.Core\bin\Debug\netcoreapp3.1\ParkUp.Domain.Core.deps.json
+D:\Projetos\ParkUp\src\ParkUp.Domain.Core\bin\Debug\netcoreapp3.1\ParkUp.Domain.Core.dll
+D:\Projetos\ParkUp\src\ParkUp.Domain.Core\bin\Debug\netcoreapp3.1\ParkUp.Domain.Core.pdb
+D:\Projetos\ParkUp\src\ParkUp.Domain.Core\obj\Debug\netcoreapp3.1\ParkUp.Domain.Core.AssemblyInfoInputs.cache
+D:\Projetos\ParkUp\src\ParkUp.Domain.Core\obj\Debug\netcoreapp3.1\ParkUp.Domain.Core.AssemblyInfo.cs
+D:\Projetos\ParkUp\src\ParkUp.Domain.Core\obj\Debug\netcoreapp3.1\ParkUp.Domain.Core.csproj.CoreCompileInputs.cache
+D:\Projetos\ParkUp\src\ParkUp.Domain.Core\obj\Debug\netcoreapp3.1\ParkUp.Domain.Core.dll
+D:\Projetos\ParkUp\src\ParkUp.Domain.Core\obj\Debug\netcoreapp3.1\ParkUp.Domain.Core.pdb
