@@ -1,11 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using ParkUp.Application.ViewModels;
 using ParkUp.CC.Identity.Models;
 using ParkUp.Domain.Interfaces;
 using ParkUp.Services.Api.Configuration;
@@ -65,10 +70,9 @@ namespace ParkUp.Services.Api.Controllers
             }
 
             await _signInManager.SignInAsync(user, false);
+            var token = await GenerateJwt(userRegistration.Email);
 
-            //var token = await GenerateJwt(userRegistration.Email);
-            //return Ok(token);
-            return Ok();
+            return Ok(token);
         }
 
         [HttpPost]
@@ -95,13 +99,51 @@ namespace ParkUp.Services.Api.Controllers
 
             if (result.Succeeded)
             {
-                //var token = await GenerateJwt(userLogin.Email);
-                //return Ok(token);
-                return Ok();
+                var token = await GenerateJwt(userLogin.Email);
+                return Ok(token);
             }
 
             return StatusCode(403);
         }
 
+        private async Task<LoginResponseViewModel> GenerateJwt(string email)
+        {
+
+            var user = await _userManager.FindByEmailAsync(email);
+            var claims = await _userManager.GetClaimsAsync(user);
+
+            claims.Add(new Claim(JwtRegisteredClaimNames.Sub, user.Id));
+            claims.Add(new Claim(JwtRegisteredClaimNames.Email, user.Email));
+
+            var identityClaims = new ClaimsIdentity();
+            identityClaims.AddClaims(claims);
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
+
+            var token = tokenHandler.CreateToken(new SecurityTokenDescriptor
+            {
+                Subject = identityClaims,
+                Issuer = _appSettings.Issuer,
+                Audience = _appSettings.ValidAt,
+                Expires = DateTime.UtcNow.AddHours(_appSettings.Expiration),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            });
+
+            var encodedToken = tokenHandler.WriteToken(token);
+
+            return new LoginResponseViewModel
+            {
+                AccessToken = encodedToken,
+                ExpiresIn = 9999,
+                UserToken = new UserTokenViewModel
+                {
+                    Id = user.Id,
+                    Email = user.Email,
+                    Name = user.UserName,
+                    Claims = claims.Select(c => new ClaimViewModel { Type = c.Type, Value = c.Value })
+                }
+            };
+        }
     }
 }

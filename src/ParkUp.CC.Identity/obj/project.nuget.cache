@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2Oom12bxAU/mujkH3QSbXaw+CYUu7dWa5Zg0TCAxxIbd9u5nU9h9dkuKKhGnYmpv9fPGO/fmom0N3MSDK3kaIw==",
+  "dgSpecHash": "9T3Z1+zGei6HtsXs2DTjY6bX1zGW7LC9uCHfUDK63hrZLzT9I0rKQNbL1WdfDEXB179Z6mnkXYbaItOFcLGWlw==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj",
+  "projectFilePath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ddk\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ddk\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.12\\microsoft.aspnetcore.authorization.3.1.12.nupkg.sha512",

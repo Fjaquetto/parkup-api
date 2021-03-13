@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Integration\\ParkUp.Infra.Integration.csproj": {}
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Integration\\ParkUp.Infra.Integration.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Integration\\ParkUp.Infra.Integration.csproj": {
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Integration\\ParkUp.Infra.Integration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Integration\\ParkUp.Infra.Integration.csproj",
+        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Integration\\ParkUp.Infra.Integration.csproj",
         "projectName": "ParkUp.Infra.Integration",
-        "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Integration\\ParkUp.Infra.Integration.csproj",
+        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Integration\\ParkUp.Infra.Integration.csproj",
         "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Integration\\obj\\",
+        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Integration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",

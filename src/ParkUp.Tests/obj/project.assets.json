@@ -3510,11 +3510,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos\\ParkUp\\src\\ParkUp.Tests\\ParkUp.Tests.csproj",
+      "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Tests\\ParkUp.Tests.csproj",
       "projectName": "ParkUp.Tests",
-      "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Tests\\ParkUp.Tests.csproj",
+      "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Tests\\ParkUp.Tests.csproj",
       "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Tests\\obj\\",
+      "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",

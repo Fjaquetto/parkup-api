@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xX78olNHsSdSYcoHa5k98JvVjBz8Zqr+VBZTG7YRSlsyhMDKB5Le1vdB3NQttI/Zw4ZkxaZClJ4lxCIbI3dA+w==",
+  "dgSpecHash": "mzzgAfJBG1Fvr+Ufv/ho4OoPPGw+WYukYds1B3EKWolVBumbxJRgN8iYZoGE6tFG1+QveolzEO/0+j8qDOfFYQ==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
+  "projectFilePath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

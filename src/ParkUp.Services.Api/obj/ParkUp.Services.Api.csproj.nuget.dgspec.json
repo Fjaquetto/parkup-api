@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\ParkUp\\src\\ParkUp.Services.Api\\ParkUp.Services.Api.csproj": {}
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Services.Api\\ParkUp.Services.Api.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj": {
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj",
+        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj",
         "projectName": "ParkUp.Application",
-        "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj",
+        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj",
         "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Application\\obj\\",
+        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj": {
-                "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj"
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj"
               }
             }
           }
@@ -60,14 +60,14 @@
         }
       }
     },
-    "D:\\Projetos\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj": {
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj",
+        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj",
         "projectName": "ParkUp.CC.Identity",
-        "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj",
+        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj",
         "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.CC.Identity\\obj\\",
+        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Projetos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj": {
-                "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj"
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj"
               }
             }
           }
@@ -144,14 +144,14 @@
         }
       }
     },
-    "D:\\Projetos\\ParkUp\\src\\ParkUp.CC.IoC\\ParkUp.CC.IoC.csproj": {
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.IoC\\ParkUp.CC.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\ParkUp\\src\\ParkUp.CC.IoC\\ParkUp.CC.IoC.csproj",
+        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.IoC\\ParkUp.CC.IoC.csproj",
         "projectName": "ParkUp.CC.IoC",
-        "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.CC.IoC\\ParkUp.CC.IoC.csproj",
+        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.IoC\\ParkUp.CC.IoC.csproj",
         "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.CC.IoC\\obj\\",
+        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -167,17 +167,17 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Projetos\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj": {
-                "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj"
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj"
               },
-              "D:\\Projetos\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj": {
-                "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj"
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj"
               },
-              "D:\\Projetos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj": {
-                "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj"
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj"
               },
-              "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj": {
-                "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj"
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj"
               }
             }
           }
@@ -215,14 +215,14 @@
         }
       }
     },
-    "D:\\Projetos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj": {
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
+        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
         "projectName": "ParkUp.Domain",
-        "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
+        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
         "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Domain\\obj\\",
+        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -267,14 +267,14 @@
         }
       }
     },
-    "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj": {
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj",
+        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj",
         "projectName": "ParkUp.Infra.Data",
-        "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj",
+        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj",
         "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Data\\obj\\",
+        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -290,8 +290,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Projetos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj": {
-                "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj"
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj"
               }
             }
           }
@@ -343,14 +343,14 @@
         }
       }
     },
-    "D:\\Projetos\\ParkUp\\src\\ParkUp.Services.Api\\ParkUp.Services.Api.csproj": {
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Services.Api\\ParkUp.Services.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\ParkUp\\src\\ParkUp.Services.Api\\ParkUp.Services.Api.csproj",
+        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Services.Api\\ParkUp.Services.Api.csproj",
         "projectName": "ParkUp.Services.Api",
-        "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Services.Api\\ParkUp.Services.Api.csproj",
+        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Services.Api\\ParkUp.Services.Api.csproj",
         "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Services.Api\\obj\\",
+        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Services.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -366,14 +366,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Projetos\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj": {
-                "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj"
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj"
               },
-              "D:\\Projetos\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj": {
-                "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj"
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj"
               },
-              "D:\\Projetos\\ParkUp\\src\\ParkUp.CC.IoC\\ParkUp.CC.IoC.csproj": {
-                "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.CC.IoC\\ParkUp.CC.IoC.csproj"
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.IoC\\ParkUp.CC.IoC.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.IoC\\ParkUp.CC.IoC.csproj"
               }
             }
           }
@@ -387,6 +387,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
             "Microsoft.AspNetCore.Authorization": {
               "target": "Package",
               "version": "[3.1.12, )"
@@ -426,6 +430,22 @@
             "Microsoft.Extensions.Identity.Core": {
               "target": "Package",
               "version": "[5.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.1.0, )"
             }
           },
           "imports": [

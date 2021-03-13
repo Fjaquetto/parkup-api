@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K14OnZp9Id55Yw/S0IkyVlYwyqsYQFGqdUgoUFj8GpGEGA/x9vPaHQnJI1KCuqNvIjjIOpFRrpiScVgfu0zgWw==",
+  "dgSpecHash": "wKsFrnYn5J5rnQ2RbMAT/JkhKF0y+HQI5IjtznUCe99KlYd43LaDCpGoFsT02JgZKsL2cDuT4pOrTGUt/MC9Xw==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\ParkUp\\src\\ParkUp.CC.IoC\\ParkUp.CC.IoC.csproj",
+  "projectFilePath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.IoC\\ParkUp.CC.IoC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ddk\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.12\\microsoft.aspnetcore.authorization.3.1.12.nupkg.sha512",
     "C:\\Users\\Ddk\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.4\\microsoft.aspnetcore.cryptography.internal.5.0.4.nupkg.sha512",

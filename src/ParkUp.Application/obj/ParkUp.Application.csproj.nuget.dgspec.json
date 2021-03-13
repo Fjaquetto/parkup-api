@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj": {}
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj": {
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj",
+        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj",
         "projectName": "ParkUp.Application",
-        "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj",
+        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj",
         "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Application\\obj\\",
+        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj": {
-                "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj"
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj"
               }
             }
           }
@@ -60,14 +60,14 @@
         }
       }
     },
-    "D:\\Projetos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj": {
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
+        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
         "projectName": "ParkUp.Domain",
-        "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
+        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
         "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Domain\\obj\\",
+        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -112,14 +112,14 @@
         }
       }
     },
-    "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj": {
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj",
+        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj",
         "projectName": "ParkUp.Infra.Data",
-        "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj",
+        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj",
         "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Infra.Data\\obj\\",
+        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -135,8 +135,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Projetos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj": {
-                "projectPath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj"
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj"
               }
             }
           }

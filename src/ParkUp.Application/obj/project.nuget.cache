@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NPIZpJOrBHbp4R/neHgRZCihVNR5qoDMeNHWD4DIl2JTvl1jpt41HHttdcPhTEVvjzvq3LMlv5IFzwQ7KA3bjA==",
+  "dgSpecHash": "LagVW/uFBimV+gK98HEbK4HQyFRBH7qIN6E8SVBlVDEIR451Sdp+a4WbwPbNleNN/fkiAeRL1tsGpXm9O1wPgg==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj",
+  "projectFilePath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ddk\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Ddk\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

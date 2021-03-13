@@ -38,6 +38,9 @@ namespace ParkUp.Services.Api
             // Authorization
             services.AddAuthSetup(Configuration);
 
+            // Swagger Config
+            services.AddSwaggerSetup();
+
             // .NET Native DI Abstraction
             services.AddDependencyInjectionSetup();
         }
@@ -68,6 +71,8 @@ namespace ParkUp.Services.Api
             {
                 endpoints.MapControllers();
             });
+
+            app.UseSwaggerSetup();
         }
     }
 }
