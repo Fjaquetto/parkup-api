@@ -35,6 +35,9 @@ namespace ParkUp.Services.Api
             // WebAPI Config
             services.AddControllers();
 
+            // AutoMapper Settings
+            services.AddAutoMapperSetup();
+
             // Authorization
             services.AddAuthSetup(Configuration);
 
