@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ParkUp.Application.Interfaces;
+using ParkUp.Application.ViewModels;
 using ParkUp.Domain.Interfaces;
 
 namespace ParkUp.Services.Api.Controllers
@@ -20,6 +21,12 @@ namespace ParkUp.Services.Api.Controllers
             IUser user) : base(user)
         {
             _empresasAppService = empresasAppService;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            return Ok(await _empresasAppService.ListarEmpresas());
         }
     }
 }

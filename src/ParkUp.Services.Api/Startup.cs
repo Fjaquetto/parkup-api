@@ -54,7 +54,6 @@ namespace ParkUp.Services.Api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwaggerSetup();
             }
 
             app.UseHttpsRedirection();

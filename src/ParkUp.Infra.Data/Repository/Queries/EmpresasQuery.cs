@@ -2,11 +2,19 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ParkUp.Infra.Data.Repository.Queries
 {
     public class EmpresasQuery : IEmpresasQuery
     {
+        public Task<string> ListarEmpresas()
+        {
+            return Task.FromResult(@"
+                        SELECT * FROM Empresas WITH (NOLOCK)
+                    ");
+        }
+
         public string Add()
         {
             throw new NotImplementedException();

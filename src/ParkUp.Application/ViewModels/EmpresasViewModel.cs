@@ -31,8 +31,8 @@ namespace ParkUp.Application.ViewModels
         public string Endereco { get; set; }
 
         [Required(ErrorMessage = "É necessário que o campo esteja preenchido.")]
-        [MinLength(5, ErrorMessage = "É necessário que o campo contenha 5 caracteres")]
-        [MaxLength(5, ErrorMessage = "É necessário que o campo contenha 5 caracteres")]
+        [MinLength(9, ErrorMessage = "É necessário que o campo contenha 9 caracteres")]
+        [MaxLength(9, ErrorMessage = "É necessário que o campo contenha 9 caracteres")]
         public string CEP { get; set; }
 
         [Required(ErrorMessage = "É necessário que o campo esteja preenchido.")]

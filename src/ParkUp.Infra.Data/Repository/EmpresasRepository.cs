@@ -3,6 +3,7 @@ using ParkUp.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ParkUp.Infra.Data.Repository
 {
@@ -13,6 +14,11 @@ namespace ParkUp.Infra.Data.Repository
             : base(_context, empresasQuery)
         {
             _empresasQuery = empresasQuery;
+        }
+
+        public Task<IEnumerable<Empresas>> ListarEmpresas()
+        {
+            return Task.FromResult(_context.ExecuteCollection<Empresas>(_empresasQuery.ListarEmpresas().Result, null));
         }
     }
 }
