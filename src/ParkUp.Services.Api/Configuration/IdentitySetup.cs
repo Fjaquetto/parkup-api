@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Logging;
 using Microsoft.IdentityModel.Tokens;
 using ParkUp.CC.Identity.Extensions;
 using ParkUp.CC.Identity.Models;
@@ -22,6 +23,7 @@ namespace ParkUp.Services.Api.Configuration
 
             services.AddIdentity<IdentityUser, IdentityRole>(options =>
             {
+                IdentityModelEventSource.ShowPII = true;
                 options.User.AllowedUserNameCharacters = string.Empty;
             })
                 .AddRoles<IdentityRole>()
