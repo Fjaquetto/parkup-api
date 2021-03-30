@@ -19,8 +19,4 @@
     <ProjectReference Include="..\ParkUp.Domain\ParkUp.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repository\Queries\" />
-  </ItemGroup>
-
 </Project>

@@ -8,19 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Ddk\\.nuget\\packages\\": {}
+    "C:\\Users\\Lucas Alves\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Lucas Alves\\Desktop\\Projetos\\ParkUp_Patio_EntradaVeiculos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
       "projectName": "ParkUp.Domain",
-      "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
-      "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\obj\\",
+      "projectPath": "C:\\Users\\Lucas Alves\\Desktop\\Projetos\\ParkUp_Patio_EntradaVeiculos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
+      "packagesPath": "C:\\Users\\Lucas Alves\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lucas Alves\\Desktop\\Projetos\\ParkUp_Patio_EntradaVeiculos\\ParkUp\\src\\ParkUp.Domain\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lucas Alves\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -32,6 +36,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -43,6 +48,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -58,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -15,3 +15,11 @@ D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Domain.Core\obj\Debug\netcoreapp3.1\Par
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Domain.Core\obj\Debug\netcoreapp3.1\ParkUp.Domain.Core.csproj.CoreCompileInputs.cache
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Domain.Core\obj\Debug\netcoreapp3.1\ParkUp.Domain.Core.dll
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Domain.Core\obj\Debug\netcoreapp3.1\ParkUp.Domain.Core.pdb
+C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Domain.Core\bin\Debug\netcoreapp3.1\ParkUp.Domain.Core.deps.json
+C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Domain.Core\bin\Debug\netcoreapp3.1\ParkUp.Domain.Core.dll
+C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Domain.Core\bin\Debug\netcoreapp3.1\ParkUp.Domain.Core.pdb
+C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Domain.Core\obj\Debug\netcoreapp3.1\ParkUp.Domain.Core.AssemblyInfoInputs.cache
+C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Domain.Core\obj\Debug\netcoreapp3.1\ParkUp.Domain.Core.AssemblyInfo.cs
+C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Domain.Core\obj\Debug\netcoreapp3.1\ParkUp.Domain.Core.csproj.CoreCompileInputs.cache
+C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Domain.Core\obj\Debug\netcoreapp3.1\ParkUp.Domain.Core.dll
+C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Domain.Core\obj\Debug\netcoreapp3.1\ParkUp.Domain.Core.pdb

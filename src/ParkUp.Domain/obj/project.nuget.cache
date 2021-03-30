@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mzzgAfJBG1Fvr+Ufv/ho4OoPPGw+WYukYds1B3EKWolVBumbxJRgN8iYZoGE6tFG1+QveolzEO/0+j8qDOfFYQ==",
+  "dgSpecHash": "+AehGSFkw454VeQMfe+Iq1ua2NM3S/vE3Ue22WfYFO8e/JkP4tQj1MRiUradYrzIb+i4wzyijEf/6Z2nJ2eTDg==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Lucas Alves\\Desktop\\Projetos\\ParkUp_Patio_EntradaVeiculos\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

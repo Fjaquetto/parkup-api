@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9ixPxKWGKuJJKWA7VDG1E+CP6tTj4P0slL47DHUZ7dDBCbf7izfHxT65VkZFCqsg2BIK3Q/HZn6nfB9KWJzAog==",
+  "dgSpecHash": "05iDJvSNIO7jO6yJSCsi+jkEkY7MHyEuVGIii+SPCHyLyLKFoDIBy8IVwYi734ByhB19KRRofjwfISQsuMSiAw==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Integration\\ParkUp.Infra.Integration.csproj",
+  "projectFilePath": "C:\\Users\\Lucas Alves\\Desktop\\Projetos\\ParkUp_Patio_EntradaVeiculos\\ParkUp\\src\\ParkUp.Infra.Integration\\ParkUp.Infra.Integration.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
