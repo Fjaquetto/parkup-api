@@ -9,5 +9,7 @@ namespace ParkUp.Domain.Interfaces
     public interface IEmpresasRepository : IRepository<Empresas>
     {
         Task<IEnumerable<Empresas>> ListarEmpresas();
+        Task<Empresas> AdicionarEmpresa(Empresas empresa);
+        Task<int> AtualizarEmpresa(Empresas empresa);
     }
 }

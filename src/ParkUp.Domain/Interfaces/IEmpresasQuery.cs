@@ -8,5 +8,7 @@ namespace ParkUp.Domain.Interfaces
     public interface IEmpresasQuery : IQueryBase
     {
         Task<string> ListarEmpresas();
+        Task<string> AdicionarEmpresa();
+        Task<string> AtualizarEmpresa();
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ParkUp.Infra.Data.Repository.Queries
 {
-    public class EmpresasQuery : IEmpresasQuery
+    public class EmpresasQuery : QueryBase, IEmpresasQuery
     {
         public Task<string> ListarEmpresas()
         {
@@ -15,34 +15,39 @@ namespace ParkUp.Infra.Data.Repository.Queries
                     ");
         }
 
-        public string Add()
+        public Task<string> AdicionarEmpresa()
         {
-            throw new NotImplementedException();
+            return Task.FromResult(@"
+                        INSERT INTO Empresas
+                        VALUES (
+                            @NomeEmpresa,
+                            @CNPJ,
+                            @IE,
+                            @Endereco,
+                            @CEP,
+                            @Cidade,
+                            @Estado,
+                            @Email,
+                            @Telefone
+                            )
+                    ");
         }
 
-        public string GetAll()
+        public Task<string> AtualizarEmpresa()
         {
-            throw new NotImplementedException();
-        }
-
-        public string GetByFilter()
-        {
-            throw new NotImplementedException();
-        }
-
-        public string GetById()
-        {
-            throw new NotImplementedException();
-        }
-
-        public string Remove()
-        {
-            throw new NotImplementedException();
-        }
-
-        public string Update()
-        {
-            throw new NotImplementedException();
+            return Task.FromResult(@"
+                        UPDATE Empresas
+                        SET NomeEmpresa = @NomeEmpresa,
+                            CNPJ = @CNPJ,
+                            IE = @IE,
+                            Endereco = @Endereco,
+                            CEP = @CEP,
+                            Cidade = @Cidade,
+                            Estado = @Estado,
+                            Email = @Email,
+                            Telefone = @Telefone
+                        WHERE Id = @Id
+                ");
         }
     }
 }

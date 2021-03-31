@@ -28,5 +28,17 @@ namespace ParkUp.Services.Api.Controllers
         {
             return Ok(await _empresasAppService.ListarEmpresas());
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Post(EmpresasViewModel empresas)
+        {
+            return Ok(await _empresasAppService.AdicionarEmpresa(empresas));
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Put(EmpresasViewModel empresas)
+        {
+            return Ok(await _empresasAppService.AtualizarEmpresa(empresas));
+        }
     }
 }

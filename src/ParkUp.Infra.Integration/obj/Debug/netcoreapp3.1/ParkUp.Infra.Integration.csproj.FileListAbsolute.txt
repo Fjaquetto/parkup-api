@@ -9,6 +9,7 @@ D:\Projetos\ParkUp\src\ParkUp.Infra.Integration\obj\Debug\netcoreapp3.1\ParkUp.I
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Infra.Integration\bin\Debug\netcoreapp3.1\ParkUp.Infra.Integration.deps.json
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Infra.Integration\bin\Debug\netcoreapp3.1\ParkUp.Infra.Integration.dll
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Infra.Integration\bin\Debug\netcoreapp3.1\ParkUp.Infra.Integration.pdb
+D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Infra.Integration\obj\Debug\netcoreapp3.1\ParkUp.Infra.Integration.csprojAssemblyReference.cache
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Infra.Integration\obj\Debug\netcoreapp3.1\ParkUp.Infra.Integration.AssemblyInfoInputs.cache
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Infra.Integration\obj\Debug\netcoreapp3.1\ParkUp.Infra.Integration.AssemblyInfo.cs
 D:\Projetos\ParkUpRepo\ParkUp\src\ParkUp.Infra.Integration\obj\Debug\netcoreapp3.1\ParkUp.Infra.Integration.csproj.CoreCompileInputs.cache
