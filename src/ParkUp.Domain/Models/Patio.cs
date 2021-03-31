@@ -6,26 +6,28 @@ namespace ParkUp.Domain.Models
 {
     public class Patio
     {
-        public int ID_PATIO { get; set; }
+        public int IdPatio { get; set; }
 
-        public int ID_EMPRESA { get; set; }
+        public int IdEmpresa { get; set; }
 
-        public string PLACA { get; set; }
+        public int IdOperador { get; set; }
 
-        public int ID_MODELO { get; set; }
+        public string Placa { get; set; }
 
-        public int ID_COR { get; set; }
+        public int IdModelo { get; set; }
 
-        public DateTime DATA_HORA_ENTRADA { get; set; }
+        public int IdCor { get; set; }
 
-        public DateTime DATA_HORA_SAIDA { get; set; }
+        public DateTime DataHoraEntrada { get; set; }
 
-        public string PERMANENCIA { get; set; }
+        public DateTime DataHoraSaida { get; set; }
 
-        public decimal VALOR { get; set; }
+        public string Permanencia { get; set; }
 
-        public int ID_TIPO_AVULSO { get; set; }
+        public decimal Valor { get; set; }
 
-        public int ID_FECHAMENTO_GERAL { get; set; }
+        public int IdTipoAvulso { get; set; }
+
+        public int IdFechamentoGeral { get; set; }
     }
 }

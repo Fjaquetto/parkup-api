@@ -8,6 +8,12 @@ namespace ParkUp.Domain.Interfaces
 {
     public interface IPatioRepository : IRepository<Patio>
     {
-        Task<IEnumerable<Patio>> ListarRegistroPatio();
+        Task<IEnumerable<Patio>> GetRegistrosPatio();
+
+        Task<int> GetRegistrosPatioById(int idPatio);
+
+        Task<Patio> PostRegistroPatio(Patio registroPatio);
+
+        Task<int> PutRegistroPatio(Patio registroPatio);
     }
 }

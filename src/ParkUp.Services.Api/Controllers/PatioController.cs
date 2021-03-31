@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ParkUp.Application.Interfaces;
+using ParkUp.Application.ViewModels;
 using ParkUp.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -28,13 +29,58 @@ namespace ParkUp.Services.Api.Controllers
         {
             try
             {
-                return Ok(await _patioAppService.ListarRegistroPatio());
+                return Ok(await _patioAppService.GetRegistrosPatio());
             }
             catch (Exception ex)
             {
-                //return Json(new { status="error", message="Erro ao listar pátio"});
                 throw ex;
             }
+        }
+
+        //[HttpGet("{idPatio}")]
+        //public async Task<IActionResult> Get(int idPatio)
+        //{
+        //    try
+        //    {
+        //        return Ok(await _patioAppService.GetRegistrosPatioById(idPatio));
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
+
+        [HttpPost]
+        public async Task<IActionResult> Post(PatioViewModel registroPatio)
+        {
+            try
+            {
+                if (registroPatio == null)
+                    return NotFound();
+
+                return Ok(await _patioAppService.PostRegistroPatio(registroPatio));
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Put(PatioViewModel registroPatio)
+        {
+            try
+            {
+                if (registroPatio == null)
+                    return NotFound();
+
+                return Ok(await _patioAppService.PutRegistroPatio(registroPatio));
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
     }
 }

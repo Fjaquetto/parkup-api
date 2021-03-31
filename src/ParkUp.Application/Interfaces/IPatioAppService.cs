@@ -8,7 +8,13 @@ namespace ParkUp.Application.Interfaces
 {
     public interface IPatioAppService
     {
-        Task<IEnumerable<PatioViewModel>> ListarRegistroPatio();
+        Task<IEnumerable<PatioViewModel>> GetRegistrosPatio();
+
+        Task<int> GetRegistrosPatioById(int idPatio);
+
+        Task<PatioViewModel> PostRegistroPatio(PatioViewModel registroPatio);
+
+        Task<int> PutRegistroPatio(PatioViewModel registroPatio);
 
     }
 }

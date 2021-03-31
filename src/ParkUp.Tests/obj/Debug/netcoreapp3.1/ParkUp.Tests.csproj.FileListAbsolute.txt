@@ -277,7 +277,6 @@ C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\Pa
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Tests\obj\Debug\netcoreapp3.1\ParkUp.Tests.csprojAssemblyReference.cache
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Tests\obj\Debug\netcoreapp3.1\ParkUp.Tests.AssemblyInfoInputs.cache
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Tests\obj\Debug\netcoreapp3.1\ParkUp.Tests.AssemblyInfo.cs
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Tests\obj\Debug\netcoreapp3.1\ParkUp.Tests.csproj.CoreCompileInputs.cache
@@ -285,3 +284,4 @@ C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\Pa
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Tests\obj\Debug\netcoreapp3.1\ParkUp.Tests.dll
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Tests\obj\Debug\netcoreapp3.1\ParkUp.Tests.pdb
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Tests\obj\Debug\netcoreapp3.1\ParkUp.Tests.genruntimeconfig.cache
+C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Tests\obj\Debug\netcoreapp3.1\ParkUp.Tests.csprojAssemblyReference.cache

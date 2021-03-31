@@ -16,9 +16,24 @@ namespace ParkUp.Infra.Data.Repository
             _patioQuery = patioQuery;
         }
 
-        public Task<IEnumerable<Patio>> ListarRegistroPatio()
+        public Task<IEnumerable<Patio>> GetRegistrosPatio()
         {
-            return Task.FromResult(_context.ExecuteCollection<Patio>(_patioQuery.ListarRegistroPatio().Result, null));
+            return Task.FromResult(_context.ExecuteCollection<Patio>(_patioQuery.GetRegistrosPatio().Result, null));
+        }
+
+        public Task<int> GetRegistrosPatioById(int idPatio)
+        {
+            return Task.FromResult(_context.ExecuteScalar<int>(_patioQuery.GetRegistrosPatioById().Result, idPatio));
+        }
+
+        public Task<Patio> PostRegistroPatio(Patio registroPatio)
+        {
+            return Task.FromResult(_context.ExecuteScalar<Patio>(_patioQuery.AdicionarRegistroPatio().Result, registroPatio));
+        }
+
+        public Task<int> PutRegistroPatio(Patio registroPatio)
+        {
+            return Task.FromResult(_context.ExecuteScalar<int>(_patioQuery.AtualizarRegistroPatio().Result, registroPatio));
         }
     }
 }

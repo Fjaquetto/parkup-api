@@ -22,3 +22,4 @@ C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\Pa
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Infra.Integration\obj\Debug\netcoreapp3.1\ParkUp.Infra.Integration.csproj.CoreCompileInputs.cache
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Infra.Integration\obj\Debug\netcoreapp3.1\ParkUp.Infra.Integration.dll
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Infra.Integration\obj\Debug\netcoreapp3.1\ParkUp.Infra.Integration.pdb
+C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.Infra.Integration\obj\Debug\netcoreapp3.1\ParkUp.Infra.Integration.csprojAssemblyReference.cache

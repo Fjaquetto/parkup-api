@@ -35,7 +35,6 @@ C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\Pa
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.CC.Identity\bin\Debug\netcoreapp3.1\ParkUp.CC.Identity.pdb
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.CC.Identity\bin\Debug\netcoreapp3.1\ParkUp.Domain.dll
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.CC.Identity\bin\Debug\netcoreapp3.1\ParkUp.Domain.pdb
-C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.CC.Identity\obj\Debug\netcoreapp3.1\ParkUp.CC.Identity.csprojAssemblyReference.cache
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.CC.Identity\obj\Debug\netcoreapp3.1\ParkUp.CC.Identity.AssemblyInfoInputs.cache
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.CC.Identity\obj\Debug\netcoreapp3.1\ParkUp.CC.Identity.AssemblyInfo.cs
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.CC.Identity\obj\Debug\netcoreapp3.1\ParkUp.CC.Identity.csproj.CoreCompileInputs.cache
@@ -43,3 +42,4 @@ C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\Pa
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.CC.Identity\obj\Debug\netcoreapp3.1\ParkUp.CC.Identity.dll
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.CC.Identity\obj\Debug\netcoreapp3.1\ParkUp.CC.Identity.pdb
 C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.CC.Identity\obj\Debug\netcoreapp3.1\ParkUp.CC.Identity.genruntimeconfig.cache
+C:\Users\Lucas Alves\Desktop\Projetos\ParkUp_Patio_EntradaVeiculos\ParkUp\src\ParkUp.CC.Identity\obj\Debug\netcoreapp3.1\ParkUp.CC.Identity.csprojAssemblyReference.cache
