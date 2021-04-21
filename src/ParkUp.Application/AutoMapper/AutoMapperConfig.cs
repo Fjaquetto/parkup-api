@@ -11,7 +11,13 @@ namespace ParkUp.Application.AutoMapper
     {
         public AutoMapperConfig()
         {
-            CreateMap<Empresas, EmpresasViewModel>().ReverseMap();
+            #region "Empresas"
+            CreateMap<Empresas, EmpresasViewModel>();
+
+            CreateMap<EmpresasViewModel, Empresas>()
+                .ForMember(x => x.DataCadastro, opt => opt.MapFrom(x => DateTime.Now))
+                .ForMember(x => x.FlgAtivo, opt => opt.MapFrom(x => true));
+            #endregion
         }
     }
 }

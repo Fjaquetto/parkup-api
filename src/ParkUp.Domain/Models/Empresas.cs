@@ -16,5 +16,7 @@ namespace ParkUp.Domain.Models
         public string Estado { get; set; }
         public string Email { get; set; }
         public string Telefone { get; set; }
+        public DateTime DataCadastro { get; set; }
+        public bool FlgAtivo { get; set; }
     }
 }

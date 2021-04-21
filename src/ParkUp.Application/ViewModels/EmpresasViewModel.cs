@@ -54,5 +54,9 @@ namespace ParkUp.Application.ViewModels
         [MinLength(14, ErrorMessage = "É necessário que o campo contenha 14 caracteres")]
         [MaxLength(14, ErrorMessage = "É necessário que o campo contenha 14 caracteres")]
         public string Telefone { get; set; }
+
+        public DateTime DataCadastro { get; set; }
+
+        public bool FlgAtivo { get; set; }
     }
 }
