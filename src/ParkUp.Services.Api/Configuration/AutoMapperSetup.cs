@@ -13,7 +13,7 @@ namespace ParkUp.Services.Api.Configuration
         {
             if (services == null) throw new ArgumentNullException(nameof(services));
 
-            services.AddAutoMapper(typeof(AutoMapperConfig));
+            services.AddAutoMapper(typeof(DomainToViewModelMappingProfile), typeof(ViewModelToDomainMappingProfile));
         }
     }
 }
