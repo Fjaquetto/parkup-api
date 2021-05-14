@@ -7,6 +7,7 @@ namespace ParkUp.Domain.Models
     public class Empresas
     {
         public int Id { get; set; }
+        public string TipoEmpresa { get; set; }
         public string NomeEmpresa { get; set; }
         public string CNPJ { get; set; }
         public string IE { get; set; }

@@ -130,6 +130,31 @@ namespace ParkUp.Infra.Data.Context.ContextDapper
             }
         }
 
+        /// <summary>
+        /// Método para executar comandos DDL e DML
+        /// </summary>
+        /// <typeparam name="T">Tipo Generico</typeparam>
+        /// <param name="cmd">Query</param>
+        /// <param name="param">Parametros da Query</param>
+        /// <returns>Retorna número de linhas afetadas.</returns>
+        public int Execute(string cmd, object param)
+        {
+            int linhas;
+            try
+            {
+                OpenConnection();
+                return linhas = _connection.Execute(cmd, param: param, commandType: CommandType.Text, transaction: _transaction, commandTimeout: 1200);
+            }
+            catch (SqlException sql)
+            {
+                throw sql;
+            }
+            finally
+            {
+                CloseConnection();
+            }
+        }
+
         public T ParallelObject<T>(string cmd, object param)
         {
             using (SqlConnection conn = new SqlConnection(_connection.ConnectionString))

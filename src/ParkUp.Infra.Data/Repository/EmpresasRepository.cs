@@ -30,5 +30,16 @@ namespace ParkUp.Infra.Data.Repository
         {
             return Task.FromResult(_context.ExecuteScalar<int>(_empresasQuery.AtualizarEmpresa().Result, empresa));
         }
+
+        public Task<Empresas> ObterEmpresaPorId(int id)
+        {
+            return Task.FromResult(
+                _context.ExecuteObject<Empresas>(_empresasQuery.ObterEmpresaPorId().Result, new { Id = id }));
+        }
+
+        public Task<int> DesativarEmpresa(int id)
+        {
+            return Task.FromResult(_context.Execute(_empresasQuery.DesativarEmpresa().Result, new { Id = id }));
+        }
     }
 }

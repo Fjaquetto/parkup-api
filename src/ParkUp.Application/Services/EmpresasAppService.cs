@@ -33,5 +33,20 @@ namespace ParkUp.Application.Services
         {
             return await _empresasRepository.AtualizarEmpresa(_mapper.Map<Empresas>(empresas));
         }
+
+        public async Task<EmpresasViewModel> ObterEmpresaPorId(int id)
+        {
+            return _mapper.Map<EmpresasViewModel>(await _empresasRepository.ObterEmpresaPorId(id));
+        }
+
+        public async Task<bool> DesativarEmpresa(int id)
+        {
+            if (await _empresasRepository.DesativarEmpresa(id) is 0) return false;
+
+            return true;
+        }
+
+        #region "PRIVATE AREA"
+        #endregion
     }
 }

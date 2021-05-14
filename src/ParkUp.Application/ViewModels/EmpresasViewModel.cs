@@ -11,6 +11,9 @@ namespace ParkUp.Application.ViewModels
         [Key]
         public int Id { get; set; }
 
+        [Required]
+        public string TipoEmpresa { get; set; }
+
         [Required(ErrorMessage = "É necessário que o campo esteja preenchido.")]
         [MinLength(3, ErrorMessage = "É necessário que o campo contenha no mínimo 3 caracteres.")]
         [MaxLength(80, ErrorMessage = "É necessário que o campo contenha no máximo 80 caracteres.")]

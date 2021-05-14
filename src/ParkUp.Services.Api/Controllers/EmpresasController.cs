@@ -23,22 +23,41 @@ namespace ParkUp.Services.Api.Controllers
             _empresasAppService = empresasAppService;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Get()
+        [HttpGet("listar-empresas")]
+        public async Task<IActionResult> ListarEmpresas()
         {
             return Ok(await _empresasAppService.ListarEmpresas());
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Post(EmpresasViewModel empresas)
+        [HttpGet("obter-empresa-por-id/{id:int}")]
+        public async Task<IActionResult> ObterEmpresaPorId(int id)
         {
+            return Ok(await _empresasAppService.ObterEmpresaPorId(id));
+        }
+
+        [HttpPost("adicionar-empresa")]
+        public async Task<IActionResult> AdicionarEmpresa(EmpresasViewModel empresas)
+        {
+            if (!ModelState.IsValid) return BadRequest();
+
             return Ok(await _empresasAppService.AdicionarEmpresa(empresas));
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Put(EmpresasViewModel empresas)
+        [HttpPut("atualizar-empresa")]
+        public async Task<IActionResult> AtualizarEmpresa(EmpresasViewModel empresas)
         {
             return Ok(await _empresasAppService.AtualizarEmpresa(empresas));
+        }
+
+        [HttpDelete("desativar-empresa")]
+        public async Task<IActionResult> DesativarEmpresa(EmpresasViewModel empresas)
+        {
+            if (!ModelState.IsValid) return BadRequest();
+
+            if (await _empresasAppService.DesativarEmpresa(empresas.Id))            
+                return Ok();           
+            else            
+                return NotFound();          
         }
     }
 }

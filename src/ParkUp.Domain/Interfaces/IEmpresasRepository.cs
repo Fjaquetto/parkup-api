@@ -11,5 +11,7 @@ namespace ParkUp.Domain.Interfaces
         Task<IEnumerable<Empresas>> ListarEmpresas();
         Task<Empresas> AdicionarEmpresa(Empresas empresa);
         Task<int> AtualizarEmpresa(Empresas empresa);
+        Task<Empresas> ObterEmpresaPorId(int id);
+        Task<int> DesativarEmpresa(int id);
     }
 }

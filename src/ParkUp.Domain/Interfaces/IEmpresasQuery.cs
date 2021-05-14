@@ -10,5 +10,7 @@ namespace ParkUp.Domain.Interfaces
         Task<string> ListarEmpresas();
         Task<string> AdicionarEmpresa();
         Task<string> AtualizarEmpresa();
+        Task<string> ObterEmpresaPorId();
+        Task<string> DesativarEmpresa();
     }
 }

@@ -11,7 +11,27 @@ namespace ParkUp.Infra.Data.Repository.Queries
         public Task<string> ListarEmpresas()
         {
             return Task.FromResult(@"
-                        SELECT * FROM Empresas WITH (NOLOCK)
+                        SELECT * 
+                        FROM Empresas WITH (NOLOCK)
+                    ");
+        }
+
+        public Task<string> ObterEmpresaPorId()
+        {
+            return Task.FromResult(@"
+                        SELECT TOP 1 * 
+                        FROM Empresas WITH (NOLOCK)
+                        WHERE Id = @Id
+                    ");
+        }
+
+        public Task<string> DesativarEmpresa()
+        {
+            return Task.FromResult(@"
+                        UPDATE Empresas
+                        SET  
+                            FlgAtivo = 0
+                        WHERE Id = @Id
                     ");
         }
 
@@ -20,6 +40,7 @@ namespace ParkUp.Infra.Data.Repository.Queries
             return Task.FromResult(@"
                         INSERT INTO Empresas
                         VALUES (
+                            @TipoEmpresa,
                             @NomeEmpresa,
                             @CNPJ,
                             @IE,
@@ -37,7 +58,9 @@ namespace ParkUp.Infra.Data.Repository.Queries
         {
             return Task.FromResult(@"
                         UPDATE Empresas
-                        SET NomeEmpresa = @NomeEmpresa,
+                        SET
+                            TipoEmpresa = @TipoEmpresa,
+                            NomeEmpresa = @NomeEmpresa,
                             CNPJ = @CNPJ,
                             IE = @IE,
                             Endereco = @Endereco,

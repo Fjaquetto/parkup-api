@@ -13,5 +13,6 @@ namespace ParkUp.Domain.Interfaces
         T ParallelObject<T>(string cmd, object param);
         T ParallelScalar<T>(string cmd, object param);
         IEnumerable<T> ExecuteCollection<T>(string cmd, object param);
+        int Execute(string cmd, object param);
     }
 }
