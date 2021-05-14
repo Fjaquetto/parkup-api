@@ -46,6 +46,8 @@ namespace ParkUp.Services.Api.Controllers
         [HttpPut("atualizar-empresa")]
         public async Task<IActionResult> AtualizarEmpresa(EmpresasViewModel empresas)
         {
+            if (!ModelState.IsValid) return BadRequest();
+
             return Ok(await _empresasAppService.AtualizarEmpresa(empresas));
         }
 
