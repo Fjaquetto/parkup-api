@@ -39,6 +39,7 @@ namespace ParkUp.Infra.Data.Repository.Queries
         {
             return Task.FromResult(@"
                         INSERT INTO Empresas
+                        OUTPUT INSERTED.*
                         VALUES (
                             @TipoEmpresa,
                             @NomeEmpresa,
@@ -49,7 +50,9 @@ namespace ParkUp.Infra.Data.Repository.Queries
                             @Cidade,
                             @Estado,
                             @Email,
-                            @Telefone
+                            @Telefone,
+                            @DataCadastro,
+                            @FlgAtivo
                             )
                     ");
         }
@@ -69,7 +72,20 @@ namespace ParkUp.Infra.Data.Repository.Queries
                             Estado = @Estado,
                             Email = @Email,
                             Telefone = @Telefone
+                        OUTPUT INSERTED.*
                         WHERE Id = @Id
+                ");
+        }
+
+        public Task<string> VerificaExistenciaEmpresa()
+        {
+            return Task.FromResult(@"
+                        SELECT TOP 1 * 
+                        FROM Empresas WITH (NOLOCK)
+                        WHERE 
+                            NomeEmpresa = @NomeEmpresa
+                        OR  CNPJ = @CNPJ
+                        OR  IE = @IE
                 ");
         }
     }

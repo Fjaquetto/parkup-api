@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -12,7 +13,7 @@ using ParkUp.Domain.Interfaces;
 namespace ParkUp.Services.Api.Controllers
 {
     [ApiController]
-    [Authorize]
+    //[Authorize]
     [Route("api/empresas")]
     public class EmpresasController : ApiController
     {
@@ -23,43 +24,47 @@ namespace ParkUp.Services.Api.Controllers
             _empresasAppService = empresasAppService;
         }
 
-        [HttpGet("listar-empresas")]
-        public async Task<IActionResult> ListarEmpresas()
+        [HttpGet]
+        public async Task<IActionResult> Get()
         {
             return Ok(await _empresasAppService.ListarEmpresas());
         }
 
-        [HttpGet("obter-empresa-por-id/{id:int}")]
-        public async Task<IActionResult> ObterEmpresaPorId(int id)
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> Get(int id)
         {
             return Ok(await _empresasAppService.ObterEmpresaPorId(id));
         }
 
-        [HttpPost("adicionar-empresa")]
-        public async Task<IActionResult> AdicionarEmpresa(EmpresasViewModel empresas)
+        [HttpPost]
+        public async Task<IActionResult> Post(EmpresasViewModel empresas)
         {
             if (!ModelState.IsValid) return BadRequest();
+
+            if (_empresasAppService.VerificaSeEmpresaExiste(empresas).Result) return Conflict(new { status = "A empresa já está cadastrada.", data = empresas });
 
             return Ok(await _empresasAppService.AdicionarEmpresa(empresas));
         }
 
-        [HttpPut("atualizar-empresa")]
-        public async Task<IActionResult> AtualizarEmpresa(EmpresasViewModel empresas)
+        [HttpPut]
+        public async Task<IActionResult> Put(EmpresasViewModel empresas)
         {
             if (!ModelState.IsValid) return BadRequest();
+
+            if (_empresasAppService.VerificaSeEmpresaExiste(empresas).Result) return Conflict(new { status = "A empresa já está cadastrada.", data = empresas });
 
             return Ok(await _empresasAppService.AtualizarEmpresa(empresas));
         }
 
-        [HttpDelete("desativar-empresa")]
-        public async Task<IActionResult> DesativarEmpresa(EmpresasViewModel empresas)
+        [HttpDelete]
+        public async Task<IActionResult> Delete(EmpresasViewModel empresas)
         {
             if (!ModelState.IsValid) return BadRequest();
 
-            if (await _empresasAppService.DesativarEmpresa(empresas.Id))            
-                return Ok();           
-            else            
-                return NotFound();          
+            if (await _empresasAppService.DesativarEmpresa(empresas.Id))
+                return Ok();
+            else
+                return NotFound();
         }
     }
 }

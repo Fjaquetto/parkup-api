@@ -2,8 +2,10 @@
 using ParkUp.Domain.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static ParkUp.Domain.Enums.TipoEmpresaEnum;
 
 namespace ParkUp.Infra.Data.Repository
 {
@@ -23,12 +25,12 @@ namespace ParkUp.Infra.Data.Repository
 
         public Task<Empresas> AdicionarEmpresa(Empresas empresa)
         {
-            return Task.FromResult(_context.ExecuteScalar<Empresas>(_empresasQuery.AdicionarEmpresa().Result, empresa));
+            return Task.FromResult(_context.ExecuteObject<Empresas>(_empresasQuery.AdicionarEmpresa().Result, empresa));
         }
 
-        public Task<int> AtualizarEmpresa(Empresas empresa)
+        public Task<Empresas> AtualizarEmpresa(Empresas empresa)
         {
-            return Task.FromResult(_context.ExecuteScalar<int>(_empresasQuery.AtualizarEmpresa().Result, empresa));
+            return Task.FromResult(_context.ExecuteObject<Empresas>(_empresasQuery.AtualizarEmpresa().Result, empresa));
         }
 
         public Task<Empresas> ObterEmpresaPorId(int id)
@@ -40,6 +42,16 @@ namespace ParkUp.Infra.Data.Repository
         public Task<int> DesativarEmpresa(int id)
         {
             return Task.FromResult(_context.Execute(_empresasQuery.DesativarEmpresa().Result, new { Id = id }));
+        }
+
+        public Task<IEnumerable<TipoEmpresa>> RetornarEnumTipoEmpresa()
+        {
+            return Task.FromResult(Enum.GetValues(typeof(TipoEmpresa)).Cast<TipoEmpresa>());
+        }
+
+        public Task<Empresas> VerificaExistenciaEmpresa(Empresas empresa)
+        {
+            return Task.FromResult(_context.ExecuteObject<Empresas>(_empresasQuery.VerificaExistenciaEmpresa().Result, empresa));
         }
     }
 }

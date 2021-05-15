@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using static ParkUp.Domain.Enums.TipoEmpresaEnum;
 
 namespace ParkUp.Domain.Models
 {
     public class Empresas
     {
         public int Id { get; set; }
-        public string TipoEmpresa { get; set; }
+        public TipoEmpresa TipoEmpresa { get; set; }
         public string NomeEmpresa { get; set; }
         public string CNPJ { get; set; }
         public string IE { get; set; }

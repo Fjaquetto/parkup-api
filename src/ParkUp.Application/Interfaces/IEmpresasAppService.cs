@@ -10,8 +10,9 @@ namespace ParkUp.Application.Interfaces
     {
         Task<IEnumerable<EmpresasViewModel>> ListarEmpresas();
         Task<EmpresasViewModel> AdicionarEmpresa(EmpresasViewModel empresas);
-        Task<int> AtualizarEmpresa(EmpresasViewModel empresas);
+        Task<EmpresasViewModel> AtualizarEmpresa(EmpresasViewModel empresas);
         Task<EmpresasViewModel> ObterEmpresaPorId(int id);
         Task<bool> DesativarEmpresa(int id);
+        Task<bool> VerificaSeEmpresaExiste(EmpresasViewModel empresas);
     }
 }

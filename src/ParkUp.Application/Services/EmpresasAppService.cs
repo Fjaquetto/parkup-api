@@ -29,9 +29,9 @@ namespace ParkUp.Application.Services
         {
             return _mapper.Map<EmpresasViewModel>(await _empresasRepository.AdicionarEmpresa(_mapper.Map<Empresas>(empresas)));
         }
-        public async Task<int> AtualizarEmpresa(EmpresasViewModel empresas)
+        public async Task<EmpresasViewModel> AtualizarEmpresa(EmpresasViewModel empresas)
         {
-            return await _empresasRepository.AtualizarEmpresa(_mapper.Map<Empresas>(empresas));
+            return _mapper.Map<EmpresasViewModel>(await _empresasRepository.AtualizarEmpresa(_mapper.Map<Empresas>(empresas)));
         }
 
         public async Task<EmpresasViewModel> ObterEmpresaPorId(int id)
@@ -46,7 +46,15 @@ namespace ParkUp.Application.Services
             return true;
         }
 
+        public async Task<bool> VerificaSeEmpresaExiste(EmpresasViewModel empresas)
+        {
+            var empresaEntity = await _empresasRepository.VerificaExistenciaEmpresa(_mapper.Map<Empresas>(empresas));
+            return empresaEntity != null && empresaEntity.Id != empresas.Id;
+        }
+
         #region "PRIVATE AREA"
+
+
         #endregion
     }
 }

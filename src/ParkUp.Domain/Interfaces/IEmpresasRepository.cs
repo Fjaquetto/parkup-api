@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using static ParkUp.Domain.Enums.TipoEmpresaEnum;
 
 namespace ParkUp.Domain.Interfaces
 {
@@ -10,8 +11,10 @@ namespace ParkUp.Domain.Interfaces
     {
         Task<IEnumerable<Empresas>> ListarEmpresas();
         Task<Empresas> AdicionarEmpresa(Empresas empresa);
-        Task<int> AtualizarEmpresa(Empresas empresa);
+        Task<Empresas> AtualizarEmpresa(Empresas empresa);
         Task<Empresas> ObterEmpresaPorId(int id);
         Task<int> DesativarEmpresa(int id);
+        Task<IEnumerable<TipoEmpresa>> RetornarEnumTipoEmpresa();
+        Task<Empresas> VerificaExistenciaEmpresa(Empresas empresa);
     }
 }
