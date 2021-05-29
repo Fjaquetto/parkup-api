@@ -4,14 +4,231 @@
     "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Tests\\ParkUp.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Tests\\ParkUp.Tests.csproj": {
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Tests\\ParkUp.Tests.csproj",
-        "projectName": "ParkUp.Tests",
-        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Tests\\ParkUp.Tests.csproj",
+        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj",
+        "projectName": "ParkUp.Application",
+        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj",
         "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Tests\\obj\\",
+        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj",
+        "projectName": "ParkUp.CC.Identity",
+        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj",
+        "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.IoC\\ParkUp.CC.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.IoC\\ParkUp.CC.IoC.csproj",
+        "projectName": "ParkUp.CC.IoC",
+        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.IoC\\ParkUp.CC.IoC.csproj",
+        "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.IoC\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj"
+              },
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj"
+              },
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj"
+              },
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
+        "projectName": "ParkUp.Domain",
+        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj",
+        "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,10 +254,307 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj",
+        "projectName": "ParkUp.Infra.Data",
+        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\ParkUp.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Services.Api\\ParkUp.Services.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Services.Api\\ParkUp.Services.Api.csproj",
+        "projectName": "ParkUp.Services.Api",
+        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Services.Api\\ParkUp.Services.Api.csproj",
+        "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Services.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj"
+              },
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity\\ParkUp.CC.Identity.csproj"
+              },
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.IoC\\ParkUp.CC.IoC.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.IoC\\ParkUp.CC.IoC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Tests\\ParkUp.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Tests\\ParkUp.Tests.csproj",
+        "projectName": "ParkUp.Tests",
+        "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Tests\\ParkUp.Tests.csproj",
+        "packagesPath": "C:\\Users\\Ddk\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ddk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application\\ParkUp.Application.csproj"
+              },
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain\\ParkUp.Domain.csproj"
+              },
+              "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Services.Api\\ParkUp.Services.Api.csproj": {
+                "projectPath": "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Services.Api\\ParkUp.Services.Api.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[33.0.2, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[3.1.15, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.5.0, )"
+            },
+            "Microsoft.NETCore.TestHost": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "Moq.Dapper": {
+              "target": "Package",
+              "version": "[1.0.4, )"
             },
             "coverlet.collector": {
               "target": "Package",
@@ -66,6 +580,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

@@ -11,6 +11,12 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("ParkUp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Application", "ParkUp.Application.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("ParkUp.CC.Identity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.Identity", "ParkUp.CC.Identity.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("ParkUp.CC.IoC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.CC.IoC", "ParkUp.CC.IoC.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("ParkUp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Domain", "ParkUp.Domain.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("ParkUp.Infra.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Infra.Data", "ParkUp.Infra.Data.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("ParkUp.Services.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Projetos\\ParkUpRepo\\ParkUp\\src\\ParkUp.Services.Api", "ParkUp.Services.Api.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ParkUp.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
