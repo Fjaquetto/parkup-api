@@ -12,9 +12,9 @@ namespace ParkUp.Application.Services
 {
     public class EmpresasAppService : IEmpresasAppService
     {
-        private readonly ITipoPrecoRepository _empresasRepository;
+        private readonly IEmpresasRepository _empresasRepository;
         private readonly IMapper _mapper;
-        public EmpresasAppService(ITipoPrecoRepository empresasRepository, IMapper mapper)
+        public EmpresasAppService(IEmpresasRepository empresasRepository, IMapper mapper)
         {
             _empresasRepository = empresasRepository;
             _mapper = mapper;
