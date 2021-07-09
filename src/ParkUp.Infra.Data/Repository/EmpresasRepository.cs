@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ParkUp.Infra.Data.Repository
 {
-    public class EmpresasRepository : Repository<Empresas>, IEmpresasRepository
+    public class EmpresasRepository : Repository<Empresas>, ITipoPrecoRepository
     {
         private readonly IEmpresasQuery _empresasQuery;
         public EmpresasRepository(IContextDapper _context, IEmpresasQuery empresasQuery)

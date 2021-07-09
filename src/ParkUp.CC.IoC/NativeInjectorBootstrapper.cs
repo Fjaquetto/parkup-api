@@ -28,7 +28,7 @@ namespace ParkUp.CC.IoC
 
             //Infra - Data
             services.AddScoped<IContextDapper, ContextDapper>();
-            services.AddScoped<IEmpresasRepository, EmpresasRepository>();
+            services.AddScoped<ITipoPrecoRepository, EmpresasRepository>();
 
             //Infra - Query
             services.AddScoped<IEmpresasQuery, EmpresasQuery>();

@@ -12,6 +12,7 @@ namespace ParkUp.Application.AutoMapper
         public AutoMapperConfig()
         {
             CreateMap<Empresas, EmpresasViewModel>().ReverseMap();
+            CreateMap<TipoPreco, TipoPrecoViewModel>().ReverseMap();
         }
     }
 }

@@ -34,7 +34,7 @@ namespace ParkUp.Application.ViewModels
         [MinLength(9, ErrorMessage = "É necessário que o campo contenha 9 caracteres")]
         [MaxLength(9, ErrorMessage = "É necessário que o campo contenha 9 caracteres")]
         public string CEP { get; set; }
-
+            
         [Required(ErrorMessage = "É necessário que o campo esteja preenchido.")]
         [MinLength(3, ErrorMessage = "É necessário que o campo contenha no mínimo 3 caracteres")]
         [MaxLength(30, ErrorMessage = "É necessário que o campo contenha no máximo 30 caracteres")]
