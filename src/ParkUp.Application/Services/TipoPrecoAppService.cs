@@ -25,9 +25,9 @@ namespace ParkUp.Application.Services
             return _mapper.Map<IEnumerable<TipoPrecoViewModel>>(await _tipoPrecoRepository.ListarPrecos(idEmpresa));
         }
 
-        public Task AdicionarTipoPreco(TipoPrecoViewModel tipoPrecos)
+        public async Task<TipoPrecoViewModel> AdicionarTipoPreco(TipoPrecoViewModel tipoPrecos)
         {
-            throw new NotImplementedException();
+            return _mapper.Map<TipoPrecoViewModel>(await _tipoPrecoRepository.AdicionarTipoPreco(_mapper.Map<TipoPreco>(tipoPrecos)));
         }
 
         public async Task<int> AtualizarTipoPreco(TipoPrecoViewModel tipoPrecos)

@@ -14,13 +14,7 @@ namespace ParkUp.Domain.Models
 		public bool FlgPrecoUnico { get; set; }
 		public bool FlgPrecoTodosDias { get; set; }
 		public bool FlgAtivo { get; set; }
-		public bool FlgConvenio { get; set; }
-		public bool FlgSegunda { get; set; }
-		public bool FlgTerca { get; set; }
-		public bool FlgQuarta { get; set; }
-		public bool FlgQuinta { get; set; }
-		public bool FlgSexta { get; set; }
-		public bool FlgSabado { get; set; }
-		public bool FlgDomingo { get; set; }
+		public bool FlgConvenio { get; set; }		
+		public int HoraMaximoDiaria { get; set; }
 	}
 }

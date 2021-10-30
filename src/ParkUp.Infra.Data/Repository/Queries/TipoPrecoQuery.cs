@@ -17,19 +17,18 @@ namespace ParkUp.Infra.Data.Repository.Queries
                          Descricao,
                          TempoToleranciaEntrada,
                          FlgPrecoUnico,
-                            
+                         HoraMaximoDiario   
 
                         )
                         VALUES (
-                            @NomeEmpresa,
-                            @CNPJ,
-                            @IE,
-                            @Endereco,
-                            @CEP,
-                            @Cidade,
-                            @Estado,
-                            @Email,
-                            @Telefone
+                            @DataCadastro,
+                            @IdEmpresa,
+                            @Descricao,
+                            @TempoToleranciaEntrada,
+                            @FlgPrecoUnico,
+                            @FlgAtivo,
+                            @FlgConvenio,
+                            @HoraMaximoDiario                            
                             )
                     ");
         }

@@ -9,7 +9,7 @@ namespace ParkUp.Application.Interfaces
     public interface ITipoPrecoAppService
     {
         Task<IEnumerable<TipoPrecoViewModel>> ListarTipoPrecos(int idEmpresa);
-        Task AdicionarTipoPreco(TipoPrecoViewModel tipoPrecos);
+        Task<TipoPrecoViewModel> AdicionarTipoPreco(TipoPrecoViewModel tipoPrecos);
         Task<int> AtualizarTipoPreco(TipoPrecoViewModel tipoPrecos);
     }
 }
