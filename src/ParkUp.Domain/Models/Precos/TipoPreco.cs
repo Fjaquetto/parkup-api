@@ -11,10 +11,10 @@ namespace ParkUp.Domain.Models
 		public int IdEmpresa { get; set; }
 		public string Descricao { get; set; }
 		public int TempoToleranciaEntrada { get; set; }
-		public bool FlgPrecoUnico { get; set; }
-		public bool FlgPrecoTodosDias { get; set; }
+		public bool FlgPrecoUnico { get; set; }		
 		public bool FlgAtivo { get; set; }
 		public bool FlgConvenio { get; set; }		
 		public int HoraMaximoDiaria { get; set; }
+		public DateTime DataCadastro { get; set; }
 	}
 }

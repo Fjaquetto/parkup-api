@@ -17,7 +17,9 @@ namespace ParkUp.Infra.Data.Repository.Queries
                          Descricao,
                          TempoToleranciaEntrada,
                          FlgPrecoUnico,
-                         HoraMaximoDiario   
+                         FlgAtivo,
+                         FlgConvenio,
+                         HoraMaximoDiaria  
 
                         )
                         VALUES (
@@ -28,7 +30,7 @@ namespace ParkUp.Infra.Data.Repository.Queries
                             @FlgPrecoUnico,
                             @FlgAtivo,
                             @FlgConvenio,
-                            @HoraMaximoDiario                            
+                            @HoraMaximoDiaria                           
                             )
                     ");
         }

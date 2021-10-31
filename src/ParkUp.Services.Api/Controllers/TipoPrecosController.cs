@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ParkUp.Application.Interfaces;
 using ParkUp.Application.ViewModels;
@@ -28,10 +29,12 @@ namespace ParkUp.Services.Api.Controllers
             return Ok(await _service.ListarTipoPrecos(idEmpresa));
         }
 
-        [HttpPost("adicionar-tipo-preco")]
+        [HttpPost("adicionar-tipo-preco")]       
         public async Task<IActionResult> Post(TipoPrecoViewModel tipoPreco)
         {
-            return Ok(await _service.AdicionarTipoPreco(tipoPreco));
+            await _service.AdicionarTipoPreco(tipoPreco);
+
+            return Ok(tipoPreco);
         }       
     }
 }

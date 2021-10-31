@@ -8,7 +8,9 @@ namespace ParkUp.Application.ViewModels
     public class TipoPrecoViewModel
     {
         [Key]
-        public int Id { get; set; }		
+        public int Id { get; set; }
+		
+		public DateTime DataCadastro { get; set; }
 		
 		public DateTime? DataUltimaAlteracao { get; set; }
 		
@@ -21,13 +23,10 @@ namespace ParkUp.Application.ViewModels
 		public int TempoToleranciaEntrada { get; set; }
 		
 		public bool FlgPrecoUnico { get; set; }
-		
-		public bool FlgPrecoTodosDias { get; set; }
-		
+	
 		public bool FlgAtivo { get; set; }
 		
-		public bool FlgConvenio { get; set; }	
-	
+		public bool FlgConvenio { get; set; }
 
 		public int HoraMaximoDiaria { get; set; }
 	}
