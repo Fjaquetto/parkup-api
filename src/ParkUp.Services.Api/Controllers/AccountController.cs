@@ -20,7 +20,7 @@ namespace ParkUp.Services.Api.Controllers
     [ApiController]
     [Route("api/account")]
     [Produces("application/json")]
-    public class AccountController : ApiController
+    public class AccountController : ApiController 
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
