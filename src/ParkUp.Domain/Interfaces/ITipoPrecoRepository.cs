@@ -11,5 +11,6 @@ namespace ParkUp.Domain.Interfaces
         Task<IEnumerable<TipoPreco>> ListarPrecos(int IdEmpresa);
         Task<TipoPreco> AdicionarTipoPreco(TipoPreco tipoPreco);
         Task<int> AtualizarTipoPreco(TipoPreco tipoPreco);
+        Task<TipoPreco> RecuperarTipoPreco(int idTipoPreco);
     }
 }

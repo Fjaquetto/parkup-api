@@ -8,7 +8,7 @@ namespace ParkUp.Application.Interfaces
 {
     public interface IPeriodoPrecoAppService
     {
-        Task<IEnumerable<PeriodoPrecoViewModel>> ListarTodosPrecosByIdTipoPreco(int idTipoPreco);
+        Task<List<PeriodoPrecoViewModel>> ListarTodosPrecosByIdTipoPreco(int idTipoPreco);
         Task<PeriodoPrecoViewModel> AdicionarPrecoPeriodo(PeriodoPrecoViewModel periodoPreco);
         Task<int> AtualizarPeriodoPreco(PeriodoPrecoViewModel periodoPreco);
     }

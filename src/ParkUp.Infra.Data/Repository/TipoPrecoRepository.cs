@@ -32,5 +32,10 @@ namespace ParkUp.Infra.Data.Repository
         {
             throw new NotImplementedException();
         }
+
+        public Task<TipoPreco> RecuperarTipoPreco(int idTipoPreco)
+        {
+            return Task.FromResult(_context.ExecuteObject<TipoPreco>(_tipoPrecoQuery.RecuperarTipoPreco().Result,new { idTipoPreco=idTipoPreco }));
+        }
     }
 }

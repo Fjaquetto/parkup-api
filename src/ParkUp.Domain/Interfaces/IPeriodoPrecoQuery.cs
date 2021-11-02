@@ -10,5 +10,6 @@ namespace ParkUp.Domain.Interfaces
         Task<string> ListarPeriodoPrecos();
         Task<string> AdicionarPeriodoPreco();
         Task<string> AtualizarPeriodoPreco();
+        Task<string> ListarPeriodoPrecosByIdTipoPreco();
     }
 }

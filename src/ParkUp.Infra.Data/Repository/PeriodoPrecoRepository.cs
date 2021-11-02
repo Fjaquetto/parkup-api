@@ -31,5 +31,10 @@ namespace ParkUp.Infra.Data.Repository
         {
             throw new NotImplementedException();
         }
+
+        public Task<IEnumerable<PeriodoPreco>> ListarPeriodoPrecosByIdTipoPreco(int IdTipoPreco)
+        {
+            return Task.FromResult(_context.ExecuteCollection<PeriodoPreco>(_querie.ListarPeriodoPrecosByIdTipoPreco().Result, new { IdTipoPreco=IdTipoPreco }));
+        }
     }
 }

@@ -25,5 +25,11 @@ namespace ParkUp.Infra.Data.Repository.Queries
         {
             throw new NotImplementedException();
         }
+
+        public Task<string> ListarPeriodoPrecosByIdTipoPreco()
+        {
+            return Task.FromResult(@"SELECT * FROM PeriodoPreco WHERE IdTipoPreco = @idTipoPreco          
+            ");
+        }
     }
 }

@@ -30,9 +30,9 @@ namespace ParkUp.Application.Services
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<PeriodoPrecoViewModel>> ListarTodosPrecosByIdTipoPreco(int idTipoPreco)
+        public async Task<List<PeriodoPrecoViewModel>> ListarTodosPrecosByIdTipoPreco(int idTipoPreco)
         {
-            throw new NotImplementedException();
+            return _mapper.Map<List<PeriodoPrecoViewModel>>(await _repository.ListarPeriodoPrecosByIdTipoPreco(idTipoPreco));
         }
     }
 }

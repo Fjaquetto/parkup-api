@@ -45,5 +45,12 @@ namespace ParkUp.Infra.Data.Repository.Queries
         {
             throw new NotImplementedException();
         }
+
+        public Task<string> RecuperarTipoPreco()
+        {
+            return Task.FromResult(@"
+                        SELECT * FROM TipoPreco where Id=@idTipoPreco
+                    ");
+        }
     }
 }

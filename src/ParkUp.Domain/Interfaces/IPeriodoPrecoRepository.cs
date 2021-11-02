@@ -12,5 +12,6 @@ namespace ParkUp.Domain.Interfaces
         Task<IEnumerable<PeriodoPreco>> ListarPeriodoPrecos(int IdTipoPreco);
         Task<PeriodoPreco> AdicionarPeriodoPreco(PeriodoPreco periodoPreco);
         Task<int> AtualizarPeriodoPreco(PeriodoPreco periodoPreco);
+        Task<IEnumerable<PeriodoPreco>> ListarPeriodoPrecosByIdTipoPreco(int IdTipoPreco);
     }
 }

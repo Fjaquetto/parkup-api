@@ -35,6 +35,12 @@ namespace ParkUp.Services.Api.Controllers
             await _service.AdicionarTipoPreco(tipoPreco);
 
             return Ok();
-        }       
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetTipoPreco(int id)
+        {
+            return Ok(await _service.GetTipoPreco(id));
+        }
     }
 }

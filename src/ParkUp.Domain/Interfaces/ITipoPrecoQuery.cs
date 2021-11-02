@@ -10,5 +10,6 @@ namespace ParkUp.Domain.Interfaces
         Task<string> ListarPrecos();
         Task<string> AdicionarTipoPreco();
         Task<string> AtualizarTipoPreco();
+        Task<string> RecuperarTipoPreco();
     }
 }

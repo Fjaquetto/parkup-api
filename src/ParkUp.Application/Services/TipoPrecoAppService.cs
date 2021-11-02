@@ -38,6 +38,11 @@ namespace ParkUp.Application.Services
         public async Task<int> AtualizarTipoPreco(TipoPrecoViewModel tipoPrecos)
         {
             return await _tipoPrecoRepository.AtualizarTipoPreco(_mapper.Map<TipoPreco>(tipoPrecos));
-        }        
+        }
+
+        public async Task<TipoPrecoViewModel> GetTipoPreco(int idTipoPreco)
+        {
+            return _mapper.Map<TipoPrecoViewModel>(await _tipoPrecoRepository.RecuperarTipoPreco(idTipoPreco));
+        }
     }
 }

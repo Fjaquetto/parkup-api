@@ -28,5 +28,12 @@ namespace ParkUp.Services.Api.Controllers
 
             return Ok();
         }
+
+        [HttpGet("listar-precos/{idTipoPreco:int}")]
+        public async Task<IActionResult> GetByIdTipoPreco(int idTipoPreco)
+        {           
+
+            return Ok(await _service.ListarTodosPrecosByIdTipoPreco(idTipoPreco));
+        }
     }
 }
