@@ -29,12 +29,12 @@ namespace ParkUp.Services.Api.Controllers
             return Ok(await _service.ListarTipoPrecos(idEmpresa));
         }
 
-        [HttpPost("adicionar-tipo-preco")]       
+        [HttpPost]       
         public async Task<IActionResult> Post(TipoPrecoViewModel tipoPreco)
         {
             await _service.AdicionarTipoPreco(tipoPreco);
 
-            return Ok(tipoPreco);
+            return Ok();
         }       
     }
 }

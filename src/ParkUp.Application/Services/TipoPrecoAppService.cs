@@ -32,24 +32,12 @@ namespace ParkUp.Application.Services
 
         public async Task<TipoPrecoViewModel> AdicionarTipoPreco(TipoPrecoViewModel tipoPrecos)
         {
-            var tipoPreco = _mapper.Map<TipoPrecoViewModel>(await _tipoPrecoRepository.AdicionarTipoPreco(_mapper.Map<TipoPreco>(tipoPrecos)));
-
-            await AdicionarPrecosPorPeriodo(tipoPreco.Id,tipoPrecos.PeriodoPrecos.ToList());
-
-            return tipoPreco;
+            return _mapper.Map<TipoPrecoViewModel>(await _tipoPrecoRepository.AdicionarTipoPreco(_mapper.Map<TipoPreco>(tipoPrecos)));          
         }
 
         public async Task<int> AtualizarTipoPreco(TipoPrecoViewModel tipoPrecos)
         {
             return await _tipoPrecoRepository.AtualizarTipoPreco(_mapper.Map<TipoPreco>(tipoPrecos));
-        }
-        private async Task AdicionarPrecosPorPeriodo(int idTipoPreco,List<PeriodoPrecoViewModel> precosPeriodo)
-        {
-            foreach (var preco in precosPeriodo)
-            {
-               preco.IdTipoPreco = idTipoPreco;
-               await _periodoPrecoAppService.AdicionarPrecoPeriodo(preco);
-            }
-        }
+        }        
     }
 }
