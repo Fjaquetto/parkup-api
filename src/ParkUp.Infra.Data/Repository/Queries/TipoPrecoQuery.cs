@@ -32,6 +32,7 @@ namespace ParkUp.Infra.Data.Repository.Queries
                             @FlgConvenio,
                             @HoraMaximoDiaria                           
                             )
+                        SELECT @@IDENTITY;
                     ");
         }
 

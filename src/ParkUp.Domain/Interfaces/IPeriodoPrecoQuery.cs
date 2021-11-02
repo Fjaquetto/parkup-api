@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ParkUp.Domain.Interfaces
 {
-    public interface ÌPeriodoPrecoQuery : IQueryBase
+    public interface IPeriodoPrecoQuery : IQueryBase
     {
         Task<string> ListarPeriodoPrecos();
         Task<string> AdicionarPeriodoPreco();

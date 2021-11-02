@@ -10,7 +10,7 @@ namespace ParkUp.Domain.Interfaces
     public interface IPeriodoPrecoRepository : IRepository<PeriodoPreco>
     {
         Task<IEnumerable<PeriodoPreco>> ListarPeriodoPrecos(int IdTipoPreco);
-        Task<Empresas> AdicionarPeriodoPreco(PeriodoPreco periodoPreco);
+        Task<PeriodoPreco> AdicionarPeriodoPreco(PeriodoPreco periodoPreco);
         Task<int> AtualizarPeriodoPreco(PeriodoPreco periodoPreco);
     }
 }

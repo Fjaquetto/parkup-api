@@ -18,7 +18,9 @@ namespace ParkUp.Infra.Data.Repository
 
         public Task<TipoPreco> AdicionarTipoPreco(TipoPreco tipoPreco)
         {
-            return Task.FromResult(_context.ExecuteScalar<TipoPreco>(_tipoPrecoQuery.AdicionarTipoPreco().Result, tipoPreco));
+            var id = _context.ExecuteScalar<int>(_tipoPrecoQuery.AdicionarTipoPreco().Result, tipoPreco);
+            tipoPreco.Id = id;
+            return Task.FromResult(tipoPreco);
         }
 
         public Task<int> AtualizarTipoPreco(TipoPreco tipoPreco)

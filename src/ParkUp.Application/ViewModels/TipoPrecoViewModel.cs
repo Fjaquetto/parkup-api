@@ -29,5 +29,6 @@ namespace ParkUp.Application.ViewModels
 		public bool FlgConvenio { get; set; }
 
 		public int HoraMaximoDiaria { get; set; }
+		public ICollection<PeriodoPrecoViewModel> PeriodoPrecos { get; set; }
 	}
 }

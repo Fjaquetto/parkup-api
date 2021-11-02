@@ -11,7 +11,7 @@ namespace ParkUp.Domain.Models.Precos
 
 		public int Periodo { get; set; }
 		public decimal Valor { get; set; }
-		public int TempoTolerancia { get; set; }
+		public int TempoToleranciaSaida { get; set; }
 		public decimal ValorHoraAdicional { get; set; }
 
 	}
