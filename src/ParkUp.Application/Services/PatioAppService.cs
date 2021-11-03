@@ -52,6 +52,7 @@ namespace ParkUp.Application.Services
         public async Task<PatioViewModel> PatchSaidaVeiculo(PatioViewModel registroPatio)
         {
             registroPatio.Valor = await CalcularValor(registroPatio);
+            registroPatio.Permanencia = await CalcularPermanencia(registroPatio);
 
             return registroPatio;
         }
@@ -64,6 +65,7 @@ namespace ParkUp.Application.Services
 
             var tipoPreco = await _tipoPrecoAppService.GetTipoPreco(patio.IdTipoAvulso);
             var periodoPrecos = await _periodoPrecoAppService.ListarTodosPrecosByIdTipoPreco(patio.IdTipoAvulso);
+            var periodoMaximo = periodoPrecos.First(p => p.Periodo == periodoPrecos.Max(m => m.Periodo));
 
             var toleranciaEntrada = tipoPreco.TempoToleranciaEntrada;
             var toleranciaTrocaPeriodo = 5;
@@ -81,11 +83,10 @@ namespace ParkUp.Application.Services
                 return periodoPrecos.Where(p => totalMinutos <= p.Periodo).First().Valor;
 
             //Não ultrapassou o período Máximo, neste caso tambem retorna o valor sem a necessidade de fazer nenhum calculo adicional
-            if (!(periodoPrecos.FirstOrDefault(p => totalMinutos <= p.Periodo) is null))
-                return periodoPrecos.First(p => totalMinutos >= p.Periodo).Valor;
+            if (totalMinutos <= periodoMaximo.Periodo)
+                return periodoPrecos.Where(p => p.Periodo >= totalMinutos).OrderBy(o => o.Periodo).First().Valor;
 
-            //Aqui tem que fazer o calculo, pois ultrapassou o limite Maximo do Periodo
-            var periodoMaximo = periodoPrecos.First(p => p.Periodo == periodoPrecos.Max(m => m.Periodo));
+            //Aqui tem que fazer o calculo, pois ultrapassou o limite Maximo do Periodo           
             var valorPeriodoMaximo = periodoMaximo.Valor;
             var valorAdicional = periodoMaximo.ValorHoraAdicional;
             var tempoHoraAdicional = Convert.ToInt32(Math.Floor((totalMinutos - periodoMaximo.Periodo) / 60));
@@ -97,6 +98,17 @@ namespace ParkUp.Application.Services
 
             return valorCalculado;
         }
+        
+        private async Task<string> CalcularPermanencia(PatioViewModel patio)
+        {
+            var tempoPermanencia = (patio.DataHoraSaida - patio.DataHoraEntrada);
+
+            var horas = $"{tempoPermanencia.Hours}h";
+            var minutos = $"{tempoPermanencia.Minutes}min";
+
+            return await Task.FromResult($"{horas}{minutos}");
+        }
+
         #endregion
 
     }
