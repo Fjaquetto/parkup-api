@@ -13,8 +13,8 @@ namespace ParkUp.Application.Interfaces
         Task<int> GetRegistrosPatioById(int idPatio);
 
         Task<PatioViewModel> PostRegistroPatio(PatioViewModel registroPatio);
-
         Task<int> PutRegistroPatio(PatioViewModel registroPatio);
+        Task<PatioViewModel> PatchSaidaVeiculo(PatioViewModel registroPatio);
 
     }
 }

@@ -82,5 +82,27 @@ namespace ParkUp.Services.Api.Controllers
             }
 
         }
+
+        /// <summary>
+        /// Atualiza o valor e o tempo de permanencia do veículo
+        /// </summary>
+        /// <param name="registroPatio">Recebe objeto do Tipo PatioViewModel</param>
+        /// <returns></returns>
+        [HttpPatch("saida-veiculo")] 
+        public async Task<IActionResult> PatchAtualizarSaidaVeiculo(PatioViewModel registroPatio)
+        {
+            try
+            {
+                if (registroPatio == null)
+                    return NotFound();
+
+                return Ok(await _patioAppService.PutSaidaVeiculo(registroPatio));
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
     }
 }
