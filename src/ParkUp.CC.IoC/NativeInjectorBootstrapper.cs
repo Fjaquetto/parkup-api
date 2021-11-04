@@ -25,13 +25,22 @@ namespace ParkUp.CC.IoC
 
             //Application
             services.AddScoped<IEmpresasAppService, EmpresasAppService>();
+            services.AddScoped<ITipoPrecoAppService, TipoPrecoAppService>();
+            services.AddScoped<IPeriodoPrecoAppService, PeriodoPrecoAppService>();
+            services.AddScoped<IPatioAppService, PatioAppService>();
 
             //Infra - Data
             services.AddScoped<IContextDapper, ContextDapper>();
             services.AddScoped<IEmpresasRepository, EmpresasRepository>();
+            services.AddScoped<ITipoPrecoRepository, TipoPrecoRepository>();
+            services.AddScoped<IPeriodoPrecoRepository, PeriodoPrecoRepository>();
+            services.AddScoped<IPatioRepository, PatioRepository>();
 
             //Infra - Query
             services.AddScoped<IEmpresasQuery, EmpresasQuery>();
+            services.AddScoped<ITipoPrecoQuery, TipoPrecoQuery>();
+            services.AddScoped<IPeriodoPrecoQuery, PeriodoPrecoQuery>();
+            services.AddScoped<IPatioQuery, PatioQuery>();
 
             // Infra - Identity
             services.AddScoped<IUser, AspNetUser>();
