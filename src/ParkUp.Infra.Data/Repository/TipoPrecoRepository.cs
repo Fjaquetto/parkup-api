@@ -25,12 +25,12 @@ namespace ParkUp.Infra.Data.Repository
 
         public Task<int> AtualizarTipoPreco(TipoPreco tipoPreco)
         {
-            throw new NotImplementedException();
+            return Task.FromResult(_context.ExecuteScalar<int>(_tipoPrecoQuery.AtualizarTipoPreco().Result,tipoPreco));
         }
 
-        public Task<IEnumerable<TipoPreco>> ListarPrecos(int IdEmpresa)
+        public Task<IEnumerable<TipoPreco>> ListarPrecos(int idEmpresa)
         {
-            throw new NotImplementedException();
+            return Task.FromResult(_context.ExecuteCollection<TipoPreco>(_tipoPrecoQuery.ListarPrecos().Result, new { IdEmpresa = idEmpresa }));
         }
 
         public Task<TipoPreco> RecuperarTipoPreco(int idTipoPreco)

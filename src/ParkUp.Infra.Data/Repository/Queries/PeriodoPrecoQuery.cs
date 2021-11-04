@@ -11,8 +11,8 @@ namespace ParkUp.Infra.Data.Repository.Queries
     {
         public Task<string> AdicionarPeriodoPreco()
         {
-            return Task.FromResult(@"INSERT INTO PeriodoPreco(IdTipoPreco,Periodo,Valor,TempoToleranciaSaida,ValorHoraAdicional)
-            VALUES(@IdTipoPreco,@Periodo,@Valor,@TempoToleranciaSaida,@ValorHoraAdicional)            
+            return Task.FromResult(@"INSERT INTO PeriodoPreco(IdTipoPreco,Periodo,Valor)
+            VALUES(@IdTipoPreco,@Periodo,@Valor)            
             ");
         }
 

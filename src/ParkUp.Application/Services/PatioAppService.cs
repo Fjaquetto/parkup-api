@@ -68,7 +68,7 @@ namespace ParkUp.Application.Services
             var periodoMaximo = periodoPrecos.First(p => p.Periodo == periodoPrecos.Max(m => m.Periodo));
 
             var toleranciaEntrada = tipoPreco.TempoToleranciaEntrada;
-            var toleranciaTrocaPeriodo = 5;
+            var toleranciaTrocaPeriodo = tipoPreco.TempoToleranciaSaida;
 
             if (totalMinutos == 0) totalMinutos = 1;
 
@@ -88,7 +88,7 @@ namespace ParkUp.Application.Services
 
             //Aqui tem que fazer o calculo, pois ultrapassou o limite Maximo do Periodo           
             var valorPeriodoMaximo = periodoMaximo.Valor;
-            var valorAdicional = periodoMaximo.ValorHoraAdicional;
+            var valorAdicional = tipoPreco.ValorHoraAdicional;
             var tempoHoraAdicional = Convert.ToInt32(Math.Floor((totalMinutos - periodoMaximo.Periodo) / 60));
 
             if (((totalMinutos - periodoMaximo.Periodo) % 60) > 0)

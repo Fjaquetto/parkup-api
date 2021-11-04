@@ -24,11 +24,10 @@ namespace ParkUp.Application.ViewModels
 		
 		public bool FlgPrecoUnico { get; set; }
 	
-		public bool FlgAtivo { get; set; }
-		
+		public bool FlgAtivo { get; set; }		
 		public bool FlgConvenio { get; set; }
-
 		public int HoraMaximoDiaria { get; set; }
-		public ICollection<PeriodoPrecoViewModel> PeriodoPrecos { get; set; }
+		public int TempoToleranciaSaida { get; set; }
+		public decimal ValorHoraAdicional { get; set; }
 	}
 }

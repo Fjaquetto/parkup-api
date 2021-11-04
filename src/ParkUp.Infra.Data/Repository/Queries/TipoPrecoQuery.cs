@@ -19,7 +19,9 @@ namespace ParkUp.Infra.Data.Repository.Queries
                          FlgPrecoUnico,
                          FlgAtivo,
                          FlgConvenio,
-                         HoraMaximoDiaria  
+                         HoraMaximoDiaria,
+                         TempoToleranciaSaida,
+                         ValorHoraAdicional
 
                         )
                         VALUES (
@@ -30,7 +32,9 @@ namespace ParkUp.Infra.Data.Repository.Queries
                             @FlgPrecoUnico,
                             @FlgAtivo,
                             @FlgConvenio,
-                            @HoraMaximoDiaria                           
+                            @HoraMaximoDiaria,
+                            @TempoToleranciaSaida,
+                            @ValorHoraAdicional
                             )
                         SELECT @@IDENTITY;
                     ");
@@ -38,12 +42,21 @@ namespace ParkUp.Infra.Data.Repository.Queries
 
         public Task<string> AtualizarTipoPreco()
         {
-            throw new NotImplementedException();
+            return Task.FromResult(@"
+                        UPDATE TipoPreco SET DataUltimaAlteracao=@DataUltimaAlteracao, 
+                        Descricao = @Descricao,
+                        FlgAtivo = @FlgAtivo,
+                        TempoToleranciaEntrada=@TempoToleranciaEntrada,
+                        TempoToleranciaSaida = @TempoToleranciaSaida
+                        WHERE Id=@Id
+                    ");
         }
 
         public Task<string> ListarPrecos()
         {
-            throw new NotImplementedException();
+            return Task.FromResult(@"
+                        SELECT * FROM TipoPreco where IdEmpresa=@IdEmpresa
+                    ");
         }
 
         public Task<string> RecuperarTipoPreco()

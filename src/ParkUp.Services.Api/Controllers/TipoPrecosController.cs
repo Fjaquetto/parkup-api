@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using ParkUp.Application.Interfaces;
 using ParkUp.Application.ViewModels;
 using ParkUp.Domain.Interfaces;
+using ParkUp.Domain.Models.RequestModels.TipoPreco;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,6 +42,14 @@ namespace ParkUp.Services.Api.Controllers
         public async Task<IActionResult> GetTipoPreco(int id)
         {
             return Ok(await _service.GetTipoPreco(id));
+        }
+
+        [HttpPatch]
+        public async Task<IActionResult> Patch(TipoPrecoModelRequest request)
+        {
+            var tipoPreco = await _service.GetTipoPreco(request.Id);
+
+            return tipoPreco == null ? NoContent() : (ActionResult)Ok(await _service.AtualizarTipoPreco(request));
         }
     }
 }
