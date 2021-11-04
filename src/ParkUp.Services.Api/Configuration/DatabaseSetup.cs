@@ -20,7 +20,7 @@ namespace ParkUp.Services.Api.Configuration
             string dbConnectionString = configuration.GetConnectionString("DefaultConnection");
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString(dbConnectionString)));
+                options.UseSqlServer(dbConnectionString));
 
             // Inject IDbConnection, with implementation from SqlConnection class.
             services.AddTransient<IDbConnection>((sp) => new SqlConnection(dbConnectionString));
