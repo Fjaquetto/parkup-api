@@ -3,9 +3,7 @@ using ParkUp.Application.Interfaces;
 using ParkUp.Application.ViewModels;
 using ParkUp.Domain.Interfaces;
 using ParkUp.Domain.Models;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace ParkUp.Application.Services
@@ -50,6 +48,11 @@ namespace ParkUp.Application.Services
         {
             var empresaEntity = await _empresasRepository.VerificaExistenciaEmpresa(_mapper.Map<Empresas>(empresas));
             return empresaEntity != null && empresaEntity.Id != empresas.Id;
+        }
+
+        public async Task<EmpresasViewModel> ExcluirEmpresa(EmpresasViewModel empresas)
+        {
+            return _mapper.Map<EmpresasViewModel>(await _empresasRepository.ExcluirEmpresa(_mapper.Map<Empresas>(empresas)));
         }
 
         #region "PRIVATE AREA"

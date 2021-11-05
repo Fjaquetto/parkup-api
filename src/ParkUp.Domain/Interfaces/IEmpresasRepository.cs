@@ -16,5 +16,6 @@ namespace ParkUp.Domain.Interfaces
         Task<int> DesativarEmpresa(int id);
         Task<IEnumerable<TipoEmpresa>> RetornarEnumTipoEmpresa();
         Task<Empresas> VerificaExistenciaEmpresa(Empresas empresa);
+        Task<Empresas> ExcluirEmpresa(Empresas empresa);
     }
 }

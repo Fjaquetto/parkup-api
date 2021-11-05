@@ -14,5 +14,6 @@ namespace ParkUp.Application.Interfaces
         Task<EmpresasViewModel> ObterEmpresaPorId(int id);
         Task<bool> DesativarEmpresa(int id);
         Task<bool> VerificaSeEmpresaExiste(EmpresasViewModel empresas);
+        Task<EmpresasViewModel> ExcluirEmpresa(EmpresasViewModel empresas);
     }
 }

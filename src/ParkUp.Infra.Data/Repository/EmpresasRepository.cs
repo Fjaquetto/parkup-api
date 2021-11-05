@@ -53,5 +53,10 @@ namespace ParkUp.Infra.Data.Repository
         {
             return Task.FromResult(_context.ExecuteObject<Empresas>(_empresasQuery.VerificaExistenciaEmpresa().Result, empresa));
         }
+
+        public Task<Empresas> ExcluirEmpresa(Empresas empresa)
+        {
+            return Task.FromResult(_context.ExecuteObject<Empresas>(_empresasQuery.ExcluirEmpresa().Result, empresa));
+        }
     }
 }

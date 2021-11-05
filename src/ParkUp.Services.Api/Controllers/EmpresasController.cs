@@ -66,5 +66,11 @@ namespace ParkUp.Services.Api.Controllers
             else
                 return NotFound();
         }
+
+        [HttpDelete("excluir")]
+        public async Task<IActionResult> ExcluirEmpresa(EmpresasViewModel empresas)
+        {
+            return Ok(await _empresasAppService.ExcluirEmpresa(empresas));
+        }
     }
 }

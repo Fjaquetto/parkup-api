@@ -88,5 +88,14 @@ namespace ParkUp.Infra.Data.Repository.Queries
                         OR  IE = @IE
                 ");
         }
+
+        public Task<string> ExcluirEmpresa()
+        {
+            return Task.FromResult(@"
+                        DELETE FROM EMPRESAS
+                        WHERE  
+                            Id = @Id
+                ");
+        }
     }
 }
