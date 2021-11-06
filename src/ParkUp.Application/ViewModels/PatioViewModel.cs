@@ -16,20 +16,20 @@ namespace ParkUp.Application.ViewModels
 
         public string Placa { get; set; }
 
-        public int IdModelo { get; set; }
-
-        public int IdCor { get; set; }
+        public int IdModelo { get; set; }      
 
         public DateTime DataHoraEntrada { get; set; }
 
-        public DateTime DataHoraSaida { get; set; }
+        public DateTime? DataHoraSaida { get; set; }
 
         public string Permanencia { get; set; }
 
-        public decimal Valor { get; set; }
+        public decimal? Valor { get; set; }
 
-        public int IdTipoAvulso { get; set; }
+        public int? IdTipoAvulso { get; set; }
 
-        public int IdFechamentoGeral { get; set; }
+        public int? IdFechamentoGeral { get; set; }
+
+        public int? IdOperadorSaida { get; set; }
     }
 }

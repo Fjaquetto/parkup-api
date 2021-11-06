@@ -30,14 +30,14 @@ namespace ParkUp.Infra.Data.Repository.Queries
                 @IdEmpresa,
                 @IdOperador,
                 @Placa,
-                @IdModelo,
-                @IdCor,
+                @IdModelo,                
                 @DataHoraEntrada,
                 @DataHoraSaida,
                 @Permanencia,
                 @Valor,
                 @IdTipoAvulso,
-                @IdFechamentoGeral
+                @IdFechamentoGeral,
+                @IdOperadorSaida
                 )");
         }
 
@@ -48,14 +48,14 @@ namespace ParkUp.Infra.Data.Repository.Queries
                 SET IdEmpresa = @IdEmpresa,
                     IdOperador = @IdOperador,
                     Placa = @Placa,
-                    IdModelo = @IdModelo,
-                    IdCor = @IdCor,
+                    IdModelo = @IdModelo,                 
                     DataHoraEntrada = @DataHoraEntrada,
                     DataHoraSaida = @DataHoraSaida,
                     Permanencia = @Permanencia,
                     Valor = @Valor,
                     IdTipoAvulso = @IdTipoAvulso,
-                    IdFechamentoGeral = @IdFechamentoGeral
+                    IdFechamentoGeral = @IdFechamentoGeral,
+                    IdOperadorSaida = @IdOperadorSaida
                 WHERE IdPatio = @IdPatio
                 ");
         }

@@ -54,6 +54,8 @@ namespace ParkUp.Application.Services
             registroPatio.Valor = await CalcularValor(registroPatio);
             registroPatio.Permanencia = await CalcularPermanencia(registroPatio);
 
+            await PutRegistroPatio(registroPatio);
+
             return registroPatio;
         }
 
@@ -61,10 +63,10 @@ namespace ParkUp.Application.Services
         private async Task<decimal> CalcularValor(PatioViewModel patio)
         {
             //Total de Minutos Estacionado (Data Saida - Data Entrada)
-            var totalMinutos = (patio.DataHoraSaida - patio.DataHoraEntrada).TotalMinutes;
+            var totalMinutos = (patio.DataHoraSaida.Value - patio.DataHoraEntrada).TotalMinutes;
 
-            var tipoPreco = await _tipoPrecoAppService.GetTipoPreco(patio.IdTipoAvulso);
-            var periodoPrecos = await _periodoPrecoAppService.ListarTodosPrecosByIdTipoPreco(patio.IdTipoAvulso);
+            var tipoPreco = await _tipoPrecoAppService.GetTipoPreco(patio.IdTipoAvulso.Value);
+            var periodoPrecos = await _periodoPrecoAppService.ListarTodosPrecosByIdTipoPreco(patio.IdTipoAvulso.Value);
             var periodoMaximo = periodoPrecos.First(p => p.Periodo == periodoPrecos.Max(m => m.Periodo));
 
             var toleranciaEntrada = tipoPreco.TempoToleranciaEntrada;
@@ -101,7 +103,7 @@ namespace ParkUp.Application.Services
         
         private async Task<string> CalcularPermanencia(PatioViewModel patio)
         {
-            var tempoPermanencia = (patio.DataHoraSaida - patio.DataHoraEntrada);
+            var tempoPermanencia = (patio.DataHoraSaida.Value - patio.DataHoraEntrada);
 
             var horas = $"{tempoPermanencia.Hours}h";
             var minutos = $"{tempoPermanencia.Minutes}min";
