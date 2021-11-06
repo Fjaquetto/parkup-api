@@ -59,6 +59,19 @@ namespace ParkUp.Infra.Data.Repository.Queries
                 WHERE IdPatio = @IdPatio
                 ");
         }
+        public Task<string> GetCaixaSaldoByPeriodo()
+        {
+            return Task.FromResult(@"
+               SELECT TP.Descricao as Tipo,COUNT(0) Quantidade,SUM(P.Valor) ValorTotal 
+                FROM Patio P
+                INNER JOIN TipoPreco TP ON P.IdTipoAvulso = TP.Id
+                WHERE P.IdEmpresa = @IdEmpresa
+                AND YEAR(DataHoraSaida) = @Ano
+                AND MONTH(DataHoraSaida) = @Mes
+                AND DAY(DataHoraSaida) = @Dia
+                GROUP BY TP.Descricao
+                ");
+        }
 
         public string Add()
         {
@@ -89,5 +102,7 @@ namespace ParkUp.Infra.Data.Repository.Queries
         {
             throw new NotImplementedException();
         }
+
+       
     }
 }

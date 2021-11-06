@@ -16,6 +16,7 @@ namespace ParkUp.Application.AutoMapper
             CreateMap<TipoPreco, TipoPrecoViewModel>();
             CreateMap<PeriodoPreco, PeriodoPrecoViewModel>();
             CreateMap<Patio, PatioViewModel>();
+            CreateMap<PatioCaixa, PatioCaixaViewModel>();
         }
     }
 }

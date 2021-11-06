@@ -15,6 +15,7 @@ namespace ParkUp.Application.Interfaces
         Task<PatioViewModel> PostRegistroPatio(PatioViewModel registroPatio);
         Task<int> PutRegistroPatio(PatioViewModel registroPatio);
         Task<PatioViewModel> PatchSaidaVeiculo(PatioViewModel registroPatio);
+        Task<IEnumerable<PatioCaixaViewModel>> GetCaixaSaldoByPeriodo(int idEmpresa, DateTime periodo);
 
     }
 }

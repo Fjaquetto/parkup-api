@@ -16,6 +16,13 @@ namespace ParkUp.Infra.Data.Repository
             _patioQuery = patioQuery;
         }
 
+        public Task<IEnumerable<PatioCaixa>> GetCaixaSaldoByPeriodo(int idEmpresa, DateTime periodo)
+        {
+            return Task
+                .FromResult(_context.ExecuteCollection<PatioCaixa>(_patioQuery.GetCaixaSaldoByPeriodo().Result, 
+                new { IdEmpresa=idEmpresa, Ano=periodo.Year,Mes=periodo.Month,Dia=periodo.Day }));
+        }
+
         public Task<IEnumerable<Patio>> GetRegistrosPatio()
         {
             return Task.FromResult(_context.ExecuteCollection<Patio>(_patioQuery.GetRegistrosPatio().Result, null));

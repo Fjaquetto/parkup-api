@@ -104,5 +104,18 @@ namespace ParkUp.Services.Api.Controllers
             }
 
         }
+
+        [HttpGet("saldo-caixa")]
+        public async Task<IActionResult> GetSaldoCaixaByPeriodo(int idEmpresa,DateTime periodo)
+        {
+            try
+            {
+                return Ok(await _patioAppService.GetCaixaSaldoByPeriodo(idEmpresa,periodo));
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

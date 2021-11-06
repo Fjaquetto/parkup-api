@@ -12,7 +12,9 @@ namespace ParkUp.Domain.Interfaces
         Task<string> GetRegistrosPatioById();
 
         Task<string> AdicionarRegistroPatio();
-
         Task<string> AtualizarRegistroPatio();
+
+        Task<string> GetCaixaSaldoByPeriodo();
+
     }
 }
