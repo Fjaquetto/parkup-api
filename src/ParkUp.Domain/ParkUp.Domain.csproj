@@ -5,8 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\NovaPasta\" />
-    <Folder Include="Models\ResponseModels\" />
+    <Compile Remove="Models\NovaPasta\**" />
+    <Compile Remove="Models\ResponseModels\**" />
+    <EmbeddedResource Remove="Models\NovaPasta\**" />
+    <EmbeddedResource Remove="Models\ResponseModels\**" />
+    <None Remove="Models\NovaPasta\**" />
+    <None Remove="Models\ResponseModels\**" />
   </ItemGroup>
 
   <ItemGroup>

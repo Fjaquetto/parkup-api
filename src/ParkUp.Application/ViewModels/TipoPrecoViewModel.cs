@@ -14,10 +14,10 @@ namespace ParkUp.Application.ViewModels
 		
 		public DateTime? DataUltimaAlteracao { get; set; }
 		
-		[Required(ErrorMessage = "É necessário que o campo esteja preenchido.")]
+		[Required(ErrorMessage = "Informar o IdEmpresa")]
 		public int IdEmpresa { get; set; }
 		
-		[Required(ErrorMessage = "É necessário que o campo esteja preenchido.")]
+		[Required(ErrorMessage = "Informar a Descrição")]
 		public string Descricao { get; set; }
 		
 		public int TempoToleranciaEntrada { get; set; }
@@ -26,6 +26,7 @@ namespace ParkUp.Application.ViewModels
 	
 		public bool FlgAtivo { get; set; }		
 		public bool FlgConvenio { get; set; }
+		[Range(12, 24, ErrorMessage = "Informe entre 12 e 24 horas")]
 		public int HoraMaximoDiaria { get; set; }
 		public int TempoToleranciaSaida { get; set; }
 		public decimal ValorHoraAdicional { get; set; }

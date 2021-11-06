@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace ParkUp.Services.Api.Controllers
 {
     [ApiController]
-    //[Authorize]
+    [Authorize]
     [Route("api/patio")]
 
     public class PatioController : ApiController

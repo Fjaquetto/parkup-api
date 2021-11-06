@@ -13,7 +13,7 @@ using ParkUp.Domain.Interfaces;
 namespace ParkUp.Services.Api.Controllers
 {
     [ApiController]
-    //[Authorize]
+    [Authorize]
     [Route("api/empresas")]
     public class EmpresasController : ApiController
     {

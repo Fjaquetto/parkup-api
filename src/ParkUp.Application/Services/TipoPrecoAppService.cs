@@ -3,11 +3,7 @@ using ParkUp.Application.Interfaces;
 using ParkUp.Application.ViewModels;
 using ParkUp.Domain.Interfaces;
 using ParkUp.Domain.Models;
-using ParkUp.Domain.Models.RequestModels.TipoPreco;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace ParkUp.Application.Services
@@ -36,7 +32,7 @@ namespace ParkUp.Application.Services
             return _mapper.Map<TipoPrecoViewModel>(await _tipoPrecoRepository.AdicionarTipoPreco(_mapper.Map<TipoPreco>(tipoPrecos)));          
         }
 
-        public async Task<int> AtualizarTipoPreco(TipoPrecoModelRequest tipoPrecos)
+        public async Task<int> AtualizarTipoPreco(TipoPrecoViewModel tipoPrecos)
         {
             return await _tipoPrecoRepository.AtualizarTipoPreco(_mapper.Map<TipoPreco>(tipoPrecos));
         }

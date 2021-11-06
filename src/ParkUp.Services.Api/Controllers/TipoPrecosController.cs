@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using ParkUp.Application.Interfaces;
 using ParkUp.Application.ViewModels;
 using ParkUp.Domain.Interfaces;
-using ParkUp.Domain.Models.RequestModels.TipoPreco;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +12,7 @@ using System.Threading.Tasks;
 namespace ParkUp.Services.Api.Controllers
 {
     [ApiController]
-    //[Authorize]
+    [Authorize]
     [Route("api/tipo-precos")]
     public class TipoPrecosController : ApiController
     {
@@ -33,6 +32,8 @@ namespace ParkUp.Services.Api.Controllers
         [HttpPost]       
         public async Task<IActionResult> Post(TipoPrecoViewModel tipoPreco)
         {
+            if (!ModelState.IsValid) return BadRequest();
+
             await _service.AdicionarTipoPreco(tipoPreco);
 
             return Ok();
@@ -45,7 +46,7 @@ namespace ParkUp.Services.Api.Controllers
         }
 
         [HttpPatch]
-        public async Task<IActionResult> Patch(TipoPrecoModelRequest request)
+        public async Task<IActionResult> Patch(TipoPrecoViewModel request)
         {
             var tipoPreco = await _service.GetTipoPreco(request.Id);
 
