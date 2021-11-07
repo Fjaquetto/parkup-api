@@ -73,6 +73,18 @@ namespace ParkUp.Infra.Data.Repository.Queries
                 ");
         }
 
+        public Task<string> GetVeiculoPatioByPlaca()
+        {
+            return Task.FromResult(@"
+               SELECT P.* 
+                FROM Patio P                
+                WHERE P.IdEmpresa = @IdEmpresa
+                AND Placa = @Placa
+                AND IdTipoAvulso IS NULL 
+               
+                ");
+        }
+
         public string Add()
         {
             throw new NotImplementedException();
@@ -103,6 +115,6 @@ namespace ParkUp.Infra.Data.Repository.Queries
             throw new NotImplementedException();
         }
 
-       
+        
     }
 }

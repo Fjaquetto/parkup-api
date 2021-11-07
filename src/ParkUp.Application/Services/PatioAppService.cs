@@ -63,6 +63,11 @@ namespace ParkUp.Application.Services
             return _automapper.Map<IEnumerable<PatioCaixaViewModel>>(await _patioRepository.GetCaixaSaldoByPeriodo(idEmpresa, periodo));
         }
 
+        public async Task<PatioViewModel> GetVeiculoPatioByPlaca(int idEmpresa, string placa)
+        {
+            return _automapper.Map<PatioViewModel>(await _patioRepository.GetVeiculoPatioByPlaca(idEmpresa, placa));
+        }
+
         #region PRIVATE AREA
         private async Task<decimal> CalcularValor(PatioViewModel patio)
         {
@@ -113,7 +118,7 @@ namespace ParkUp.Application.Services
             var minutos = $"{tempoPermanencia.Minutes}min";
 
             return await Task.FromResult($"{horas}{minutos}");
-        }        
+        }       
 
         #endregion
 

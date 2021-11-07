@@ -117,5 +117,21 @@ namespace ParkUp.Services.Api.Controllers
                 throw ex;
             }
         }
+
+
+        [HttpGet("veiculo-por-placa")]
+        public async Task<IActionResult> GetVeiculoByPlaca(int idEmpresa, string placa)
+        {
+            try
+            {
+                var veiculo = await _patioAppService.GetVeiculoPatioByPlaca(idEmpresa, placa);
+
+                return (veiculo is null) ? NoContent() : (ActionResult)Ok(veiculo);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

@@ -33,6 +33,11 @@ namespace ParkUp.Infra.Data.Repository
             return Task.FromResult(_context.ExecuteScalar<int>(_patioQuery.GetRegistrosPatioById().Result, idPatio));
         }
 
+        public Task<Patio> GetVeiculoPatioByPlaca(int idEmpresa, string placa)
+        {
+            return Task.FromResult(_context.ExecuteObject<Patio>(_patioQuery.GetVeiculoPatioByPlaca().Result, new { IdEmpresa=idEmpresa,Placa=placa }));
+        }
+
         public Task<Patio> PostRegistroPatio(Patio registroPatio)
         {
             return Task.FromResult(_context.ExecuteScalar<Patio>(_patioQuery.AdicionarRegistroPatio().Result, registroPatio));

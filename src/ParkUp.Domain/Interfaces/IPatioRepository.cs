@@ -17,5 +17,7 @@ namespace ParkUp.Domain.Interfaces
 
         Task<int> PutRegistroPatio(Patio registroPatio);
         Task<IEnumerable<PatioCaixa>> GetCaixaSaldoByPeriodo(int idEmpresa,DateTime periodo);
+
+        Task<Patio> GetVeiculoPatioByPlaca(int idEmpresa,string placa);
     }
 }

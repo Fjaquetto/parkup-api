@@ -16,5 +16,7 @@ namespace ParkUp.Domain.Interfaces
 
         Task<string> GetCaixaSaldoByPeriodo();
 
+        Task<string> GetVeiculoPatioByPlaca();
+
     }
 }
